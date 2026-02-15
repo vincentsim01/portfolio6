@@ -1,0 +1,910 @@
+body{
+     font-family: michroma, "noto sans";
+     margin:0px;
+     padding:0px;
+    }
+
+    /* Header for navigation, logo, search and user */
+.theheader{
+    display: flex; 
+    position: sticky;
+    top: 0;
+    padding:20px;
+    font-size: 13px; 
+    font-weight: bold;
+    align-items: center;
+    z-index:3;
+    background:white;
+}
+    
+.theinsideheader{
+    display: inline-block;
+    padding: 10px;
+    width:20%;
+}
+    
+.theinsideheaderleft{
+    left: 1%;
+    display: inline-block;
+    width:35%;
+    margin-right:10%;
+    padding: 10px;
+    text-align: left;
+}
+
+.menuburgercontainer{
+    display:none;
+}
+   
+.menuburger{
+    display:none;
+    cursor:pointer;
+}
+
+.none{
+    display:none;
+}
+
+textarea{
+    font-family:michroma, "noto sans";
+}
+
+.menunavburgercontainer{
+    width:30%;
+    width:100px;
+    background-color: #f0f0f0;
+    border:solid 1px black;
+    border-radius:10px;
+    padding:5px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:2;
+    font-size:10px;
+    cursor:pointer;
+}
+
+.closeburgernav{
+    width:13%;
+    border-radius:10px;
+    background-color: red;
+    position:absolute;
+    top:-2px;
+    right:-2px;
+
+}
+
+.theinsideheaderright{
+    display: inline-block;
+    width:25%;
+    margin-left:5%;
+    text-align: right;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.rightheadercontentcontainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+.thelinks{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.thelinks:hover{
+    text-decoration: underline;
+    transition: text-decoration 1s ease-in-out;
+}
+  
+.searchicon{
+    right:50px;
+    width:16px;
+    cursor: pointer;
+    }
+
+.searchinput{
+    width:45%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    display:inline-block;
+}
+    
+.userimage{
+    width:24px;
+    }
+
+.logoimagecontainer{
+    display:inline-block;
+    width:10%;
+}
+    
+.logoimage{
+    width:150px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    
+}
+
+.logoimage:hover{
+    animation: spin-like-planet 2s linear forwards;
+}
+    
+    
+.theimage{
+    width:500px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-style: groove;
+    border: 3px ridge #ffffff;
+}
+
+.theimage:hover{
+    transform: scale(1.01) rotate(-3deg);
+    transition: transform 0.3s ease-in-out;
+}
+    
+    
+.gradient-overlay {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 35%; /* Adjust width of fading area */
+    height: 100%;
+    border-radius: 15px;
+    background: linear-gradient(to right, white, f0f0f0);
+    backdrop-filter: blur(15px); /* Blur the image beneath the overlay */
+    pointer-events: none; /* So it doesn't block clicks */
+}
+    
+h1{
+    font-size: 110px;
+}
+    
+
+.thefootercontainer{
+    display:block;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    color:white;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.footercontent{
+    display:flex;
+    align-items: top;
+    margin:5px;
+    padding:5px;
+}
+
+.footercontentinside{
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.footercontentinside p:hover{
+    text-decoration: underline;
+    text-shadow:#000 3px 3px;
+}
+
+.footercontentleft{
+    display:inline-block;
+    width:30%;
+}
+
+.footercontentleft h3{
+    font-size:1em;
+}
+
+.footercontentleft p{
+    font-size:0.7em;
+}
+
+.footercontentmiddle{
+    display:inline-block;
+    width:30%;
+}
+
+.footercontentmiddle h3{
+    font-size:1em;
+    margin-bottom:0.7em;
+}
+
+.footercontentmiddle p{
+    font-size:0.7em;
+    margin-top:0.7em;
+}
+
+
+.footercontentright{
+    display:inline-block;
+    width:30%;
+}
+
+.footercontentright h3{
+    font-size:1em;
+}
+
+.footercontentright p{
+    font-size:0.7em;
+    margin-top:0.7em;
+}
+
+.fa-brands:hover{
+    transform:scale(1.03);
+}
+
+.paymentlogocontainer{
+    display:flex;
+    justify-content: center;
+}
+
+.paymentlogo{
+    display:inline-block;
+    width:10%;
+    cursor:pointer;
+}
+
+.paymentlogopicture{
+    width:30px;
+    height:30px;
+}
+
+/* Extra small devices (phones, <480px) */
+@media (max-width: 375px) {
+    .theinsideheaderleft{
+      display:none;
+    }
+    .menuburgercontainer{
+        display:block;
+        width:35%;
+        margin-right:5%;
+    }
+    .menuburger{
+        display:block;
+        width:3vh;
+    }
+
+    .userimage{
+        width:100%;
+    }
+
+    .searchinput{
+        display: none;
+        border:1px solid #000;
+      }
+
+      .theinsideheaderright{
+        display:block;
+        width:30%;
+      }
+
+      .rightheadercontentcontainer{
+        display:block;
+        text-align:right;
+        width:20%;
+      }
+
+      .logoimagecontainer{
+        display:block;
+        width:60%;
+      }
+
+      .searchicon{
+        display:none;
+      }
+
+      .thefootercontainer{
+        display:block;
+        width:100%;
+      }
+
+      .footercontent{
+        font-size:7px;
+        display:block;
+        width:100%;
+      }
+
+      .footercontentleft{
+        display:block;
+        width:85%;
+        font-size:9px;        
+        border:1px solid #000;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding:10px;
+      }
+
+      .footercontentmiddle{
+        display:block;
+        width:85%;
+        font-size:9px;
+        margin-top:5vh;
+        border:1px solid #000;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding:10px;
+      }
+
+      .footercontentright{
+        display:block;
+        width:85%;
+        font-size:9px;
+        margin-top:5vh;
+        border:1px solid #000;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding:10px;
+      }
+
+      .paymentlogocontainer{
+        display:inline;
+    }
+    
+
+      .paymentlogo{
+        display:inline-block;
+        width:23%;
+        height:40px;
+        padding:0px;
+      
+      }
+
+      img.paymentlogopicture{
+        width:60%;
+        height:60%;
+        margin-top:6vh;
+    }
+  }
+  
+  /* Small devices (phones, ≤600px) */
+  @media (min-width:375px) and (max-width: 600px) {
+    .theinsideheaderleft{
+        display:none;
+      }
+
+    .menuburgercontainer{
+        display:block;
+        width:20%;
+    }
+
+    .menuburger{
+        display:block;
+        width:30px;
+    }
+
+    .logoimagecontainer{
+        width:70%;
+        text-align: center;
+    }
+
+    .theinsideheaderright{
+        width:10%;
+    }
+
+    .searchinput{
+        display:none;
+    }
+
+    .searchicon{
+        display:none;
+    }
+
+    .thefootercontainer{
+        display:block;
+    }
+
+    .footercontent{
+        font-size:9px;
+        display:block;
+      }
+
+      .footercontentleft{
+        display:block;
+        width:90%;
+        font-size:9px;        
+        border:1px solid #000;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding:10px;
+      }
+
+      .footercontentmiddle{
+        display:block;
+        width:90%;
+        font-size:9px;
+        margin-top:5vh;
+        border:1px solid #000;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding:10px;
+      }
+
+      .footercontentright{
+        display:block;
+        width:90%;
+        font-size:9px;
+        margin-top:5vh;
+        border:1px solid #000;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding:10px;
+      }
+
+      .paymentlogocontainer{
+        display:inline;
+    }
+    
+
+      .paymentlogo{
+        display:inline-block;
+        width:23%;
+        height:40px;
+        padding:0px;
+      
+      }
+
+      img.paymentlogopicture{
+        width:60%;
+        height:75%;
+        margin-top:6vh;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media (min-width: 601px) and (max-width: 768px) {
+    .theinsideheaderleft{
+        display:none;
+      }
+    .menuburgercontainer{
+        display:block;
+        width:30%;
+        /* border:solid 1px black; */
+    }
+    .menuburger{
+        display:block;
+        width:30px;
+    }
+    .logoimagecontainer{
+        width:30%;
+    }
+    .searchinput{
+        display:none;
+      }
+    .searchicon{
+        display:none;
+    }
+
+    .footercontent{
+        font-size:8px;
+      }
+
+      .paymentlogopicture{
+        width:15px;
+        height:15px;
+    }
+
+
+  }
+  
+  /* Large devices (laptops/tablets) */
+  @media (min-width: 769px) and (max-width: 1169px) {
+    .theinsideheaderleft{
+        display:none;
+      }
+    .menuburgercontainer{
+        display:block;
+        width:40%;
+    }
+    .theinsideheaderleft{
+        width:50%;
+      }
+    .logoimagecontainer{
+        width:30%;
+    }
+    .theinsideheaderright{
+        
+        width:20%;
+        border:solid 1 px black;
+      }
+    .menuburger{
+        display:block;
+        width:30px;
+    }
+    .searchinput{
+        display:none;
+    }
+    .searchicon{
+        display:none;
+    }
+    .footercontent{
+        font-size:10px;
+      }
+
+    .paymentlogopicture{
+        width:20px;
+        height:20px;
+    }
+  }
+  
+  /* Extra large devices (desktops and up) */
+  @media (min-width: 1170px) and (max-width: 1300px){
+
+    .searchinput{
+        display:none;
+    }
+    .searchicon{
+        display:none;
+    }
+    .theinsideheaderleft{
+        width:40%;
+      }
+    .theinsideheaderright{
+        width:20%;
+        border:solid 1 px black;
+      }
+  }
+
+
+.footer {
+    background: #f0f0f0;
+    position: relative;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+    border:solid 1px black;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    filter: blur(20px);
+}
+
+.footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #525252, #242424, #000000, #0099cc);
+    background-size: 200% 100%;
+    animation: flowLine 3s linear infinite;
+}
+
+@keyframes flowLine {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    position: relative;
+}
+
+.footer-section {
+    position: relative;
+    padding: 25px 20px;
+}
+
+.footer-section:nth-child(1) {
+    width: 30%;
+    margin-right: 15px;
+}
+
+.footer-section:nth-child(2) {
+    width: 40%;
+    margin: 0 15px;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    position: relative;
+}
+
+.footer-section:nth-child(3) {
+    width: 25%;
+    margin-left: 15px;
+}
+
+.footer-section:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, transparent, #434343, #000000, #00d4ff, transparent);
+    animation: verticalFlow 3s linear infinite;
+}
+
+.footer-section:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, transparent, #444444, #1b1b1b, #000000, transparent);
+    animation: verticalFlow 3s linear infinite 1.5s;
+}
+
+@keyframes verticalFlow {
+    0% { 
+        background: linear-gradient(180deg, transparent, #303030, #0099cc, #000000, transparent);
+        background-position: 0 -100%;
+    }
+    100% { 
+        background: linear-gradient(180deg, transparent, #232323, #0099cc, #000000, transparent);
+        background-position: 0 100%;
+    }
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 3px;
+    height: 30px;
+    background: linear-gradient(180deg, #272727, #000000);
+    border-radius: 2px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 12px;
+    background: linear-gradient(45deg, #e0e0e0, #f5f5f5);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-links a:hover {
+    background: linear-gradient(45deg, #00d4ff, #0099cc);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+.contact-info {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #444;
+    font-weight: 400;
+    position: relative;
+    padding-left: 20px;
+}
+
+.contact-info li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #00d4ff;
+    font-size: 10px;
+}
+
+.policy-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.policy-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 5px 0;
+}
+
+.policy-links a:hover {
+    color: #00d4ff;
+    transform: translateX(5px);
+}
+
+.policy-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00d4ff, #0099cc);
+    transition: width 0.3s ease;
+}
+
+.policy-links a:hover::after {
+    width: 100%;
+}
+
+.payment-logos {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.payment-logo {
+    width: 50px;
+    height: 32px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 900;
+    color: #333;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.payment-logo:hover {
+    border-color: #00d4ff;
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.footer-bottom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+}
+
+.copyright {
+    font-size: 12px;
+    color: #666;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.separator-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00d4ff, #0099cc, #00d4ff, transparent);
+    margin: 30px 0;
+    position: relative;
+}
+
+.separator-line::before,
+.separator-line::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    background: #00d4ff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00d4ff;
+}
+
+.separator-line::before {
+    left: 10%;
+    animation: pulse 2s infinite;
+}
+
+.separator-line::after {
+    right: 10%;
+    animation: pulse 2s infinite 1s;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section:nth-child(1),
+    .footer-section:nth-child(2),
+    .footer-section:nth-child(3) {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    
+    .footer-section:nth-child(2)::before,
+    .footer-section:nth-child(2)::after {
+        display: none;
+    }
+    
+    .social-links a {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+    
+    .payment-logos {
+        justify-content: center;
+    }
+}
+
+
+@keyframes spin-like-planet {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+
+
+
+

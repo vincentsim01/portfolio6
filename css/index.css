@@ -1,0 +1,573 @@
+.banner{
+    display:flex;
+    align-items: center;
+    background-color: #000;
+    border: 1px solid #ffffff;
+    color:black;
+    background: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnhjeHByanNmbG1wYnIwMXBqYTgzc2h3ajR6d2hiMWw5cjJ1YmlzNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xRz3yKv5KnHTcA/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:900px;
+}
+
+.textrotated{
+    transform: rotate(90deg);
+    position: absolute;
+    top:-380%;
+    right:-30%;
+    letter-spacing: -12px;
+    font-size: 50px;
+}
+
+.tabletitle{
+    font-size:100px;
+}
+    
+.textsmall{
+    position: absolute;
+    bottom:-650%;
+    right:-80%;
+    font-family: michroma;
+    margin:10px;
+    text-align: right;
+    line-height: 0.6;
+    font-size: 12px;
+}
+    
+.banner2{
+    display:block;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 10px;
+    }
+    
+.bannerleft{
+    display:inline-block;
+    position: relative;
+    width: 45%;
+    text-align: center;
+    border-radius: 10px;
+    }
+    
+.bannerright{
+    display:inline-block;
+    text-align: center;
+    width: 35%;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bannerright button a{
+    color:black;
+}
+
+#indexbuttonbanner{
+    background: transparent;
+    position:absolute;
+    bottom:-30%;
+    left:25%;
+    width:50%;
+    color:white;
+    font-family: michroma;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#indexbuttonbanner:hover{
+    background: rgb(162, 161, 161);
+    color:white;
+    transition: background 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    cursor:pointer;
+}
+
+
+.thetablecontainer{
+    display:flex;
+    position:relative;
+    justify-content: right;
+    align-items: top;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-image: url('https://i.ibb.co/zTgMPyWY/picture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height:130vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); 
+    z-index: 0;
+}
+
+#tableinsideleft{
+    display:inline-block;
+    width:50%;
+    height:250px;
+    font-size: 40px;
+    position:absolute;
+    left:10%;
+    z-index:2;
+}
+
+.tabletitle{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color:black;
+}
+
+.tableleftp{
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    display:inline-block;
+    border:1px solid white;
+    background-color: rgba(223, 212, 212, 0.5);
+    animation:tablemove;
+    animation-duration:2s;
+}
+
+.thetable{
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    width:90%;
+    height:30vh;
+    font-size: 10px;
+    z-index:2;
+    animation: tablemove;
+    animation-duration: 2s;
+}
+
+td,tr,th{
+    padding: 8px;
+}
+
+.skillicontable{
+    width:30px;
+}
+
+tr{
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    width:80%;
+}
+
+td{
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+
+
+.theskillscontainer{
+    display:block;
+    position:relative;
+    border: solid black 1px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    background-image:url('https://i.ibb.co/4R75Q55Q/5968949.jpg');
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
+    z-index:0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:120vh;
+
+}
+
+.skills-container {
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    margin:10px;
+    padding:10px;
+    width: 94%;
+    height:80%;
+    z-index:2;
+    color:black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border:1px solid black;
+    column-gap:3%;
+}
+
+.skillbutton{
+    background: transparent;
+    width:60%;
+    color:black;
+    font-family: michroma;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    transition:width 2s;
+}
+
+
+.skillbutton:hover{
+    transform:scale(1.1);
+    width:80%;
+}
+
+.skills-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color:black;
+    z-index:2;
+}
+.skilloverlay{
+    z-index:-1;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.contentinside{
+    border:solid 1px black;
+    border-radius: 10px;
+    z-index:2;
+    padding:10px;
+    text-align: center;
+}
+
+.skills-container div:nth-of-type(1){
+    grid-row:1/2;
+    grid-column:1/2;
+}
+.skills-container div:nth-of-type(2){
+    grid-row:2/6;
+    grid-column:1/2;
+}
+
+.skills-container div:nth-of-type(3){
+    grid-row:1/2;
+    grid-column:2/3;
+}
+
+.skills-container div:nth-of-type(4){
+    grid-row:2/6;
+    grid-column:2/3;
+}
+.skills-container div:nth-of-type(5){
+    grid-row:1/2;
+    grid-column:3/4;
+}
+.skills-container div:nth-of-type(6){
+    grid-row:2/6;
+    grid-column:3/4;
+}
+
+.logocontent{
+    width:20%;
+    animation: chooseCharacter 1s infinite;
+}
+
+.texttitle{
+    font-size:12px;
+    text-align:left;
+}
+
+.pricetext{
+    text-align:center;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    padding:5px;
+    border-radius:10px;
+    box-shadow:5px 4px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pricetext:hover{
+    transform:scale(1.1);
+    background-color: rgb(74, 74, 74);
+    box-shadow:5px 6px 6px 5px rgba(248, 101, 101, 0.2);
+}
+
+@media (max-width: 375px){
+    .banner{
+        display:block;
+        border:solid 1px black;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height:100vh;
+        margin-bottom:10vh;
+    }
+
+    .bannerleft{
+        display:block;
+        position:relative;
+    }
+
+    .textrotated{
+        transform:rotate(0deg);
+        position:relative;
+        letter-spacing: -5px;
+    }
+
+    .textrotatedfont{
+        font-size:0.8em;
+    }
+
+    .textsmall{
+        position:relative;
+        margin:0px;
+        text-align: right;
+        font-size: 10px;
+        line-height: normal;
+    }
+
+    #indexbuttonbanner{
+        width:100%;
+    }
+
+    .bannerright{
+        display:block;
+    }
+
+    .theimage{
+        width:40vh;
+    }
+
+    .thetablecontainer{
+        display:block;
+        height:80vh;
+        padding-top:15vh;
+    }
+
+    #tableinsideleft{
+        transform:none;
+        font-size:6px;
+        display:block;
+        height:100px;
+        width:85%;
+    }
+
+    .tabletitle{
+        font-size: 1.9em;
+        font-weight: 1000;
+        color:black;
+    }
+
+    .tableleftp{
+        font-size: 10px;
+    }
+
+    .thetable{
+        display:block;
+        width:95%;
+        font-size:0.8em;
+    }
+
+    .theskillscontainer{
+        display:block;
+        font-size: 10px;
+        height:290vh;
+        border:1px solid black;
+        padding:0px;
+
+    }
+
+    .skills-container{
+        display:block;
+        padding:0px;
+        height:260vh;
+        border:0px;
+    }
+
+    .contentinside{
+        display:block;
+    }
+
+    .skillbutton{
+        font-size:0.8em;
+    }
+
+    .skill-item{
+        width:80%;
+    }
+
+    .progress-bar-container{
+        width:50%;
+    }
+
+    .skill-header{
+        font-size:10px;
+    }
+}
+
+
+
+@media (min-width:375px) and (max-width: 768px){
+    .banner{
+        display:block;
+    }
+
+    .bannerleft{
+        display:block;
+        position:relative;
+    }
+
+    .textrotated{
+        transform:rotate(0deg);
+        position:relative;
+        letter-spacing: -5px;
+    }
+
+    .textrotatedfont{
+        font-size:60px;
+    }
+
+    .textsmall{
+        position:relative;
+        margin:0px;
+        text-align: right;
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    .bannerright{
+        display:block;
+    }
+
+    #indexbuttonbanner{
+        width:100%;
+    }
+
+    .theimage{
+        width:40vh;
+    }
+
+    .thetable{
+        display:block;
+        width:90%;
+        font-size:10px;
+    }
+
+     .thetablecontainer{
+        display:block;
+        height:130vh;
+    }
+
+    #tableinsideleft{
+        display:block;
+        width:85%;
+    }
+
+    .thetable{
+        display:inline-block;
+        width:90%;
+        font-size:7px;
+    }
+
+    .theskillscontainer{
+        display:block;
+        z-index:2;  
+    }
+
+    .tableleftp{
+        font-size:10px;
+    }
+
+
+    .theskillscontainer{
+        display:block;
+        font-size: 10px;
+        height:270vh;
+        border:1px solid black;
+        padding:0px;
+    }
+
+    .skills-container{
+        display:block;
+        padding:0px;
+        height:250vh;
+        border:0px;   
+    }
+
+    .progress-bar-container{
+        width:70%;
+    }
+
+    .skill-item{
+        width:80%;
+    }
+
+    .progress-bar-container{
+        width:80%;
+    }
+
+    .skill-header{
+        font-size:10px;
+    }
+
+    .skilloverlay{
+        z-index: 0;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1150px){
+    .theimage{
+        width:70vh;
+    }
+
+    .thetablecontainer{
+        display:block;
+    }
+
+    #tableinsideleft{
+        display:block;
+        width:90%;
+    }
+}
+
+
+
+@keyframes chooseCharacter {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    30% {
+      transform: translateY(-10px) scale(1.05);
+    }
+    60% {
+      transform: translateY(0) scale(0.98);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+
+
+
+
+

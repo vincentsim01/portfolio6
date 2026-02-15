@@ -1,0 +1,6 @@
+e2e/
+prisma/
+node_modules/
+dist/
+.env
+coverage/

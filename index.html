@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Vincent Kiathadi's portfolio website. Let's connect and explore my work.">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Website Developer In Town | Vincent Kiathadi">
+  <meta property="og:description" content="Discover award-winning website developer in town. Let's connect and explore all possibilities">
+  <meta property="og:image" content="https://i.ibb.co/k2pYPYTf/Screenshot-2025-07-03-102851.png">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/icons8-star-48.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/index2.css">
+  <!-- <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css"> -->
+  
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+</style>
+<style>
+    .font-michroma {
+      font-family: 'Michroma', sans-serif;
+    }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+    </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+        tailwind.config = {
+          darkMode: 'class',
+          // You can extend theme here if needed
+        }
+      </script>
+
+    <script src="https://kit.fontawesome.com/b7f46329c5.js" crossorigin="anonymous"></script>
+  <title>Home Page</title>
+
+</head>
+
+<body class="font-michroma">
+
+    <header class="theheader flex justify-center top-[0px] sticky bg-white shadow-lg p-5 pt-8 z-50">
+        <nav class="theinsideheaderleft w-4/9 hidden lg:inline-block">
+              <a href="index.html" class="thelinks hover:underline text-sm mr-2">HOME</a>
+              <a href="about.html" class="thelinks hover:underline text-sm mr-2">ABOUT</a>
+              <a href="contact.html" class="thelinks hover:underline text-sm mr-2">CONTACT</a>
+              <a href="project.html" class="thelinks hover:underline text-sm">PROJECTS</a>
+        </nav>
+              <div class="menuburgercontainer cursor-pointer lg:hidden md:w-2/5 w-1/3 flex justify-start"><img src="https://i.ibb.co/TD8qWCZJ/menu.png"  class="menuburger w-[20px]" title="burger"></img></div>
+              <div class="menunavburgercontainer hidden none w-[80%] border absolute left-0 bg-white p-2 rounded-md h-screen shadow-lg z-50">
+                  <div class="closeburgernav cursor-pointer absolute -top-3 -right-3 border bg-black rounded-full hover:bg-black-300 text-white"><i class="fa-solid fa-circle-xmark"></i></div>
+                  <p class="hover:underline mt-5 mb-3"><a href="index.html" class="thelinksburger hover:underline">HOME</a></p>
+                  <p class="hover:underline mb-3"><a href="about.html" class="thelinksburger hover:underline">ABOUT</a></p>
+                  <p class="hover:underline mb-3"><a href="contact.html" class="thelinksburger hover:underline">CONTACT</a></p>
+                  <p class="hover:underline mb-3"><a href="project.html" class="thelinksburger hover:underline">PROJECTS</a></p>
+              </div>
+        <div class="logoimagecontainer lg:w-1/9 md:w-1/5 w-1/3"><a href="index.html"><img src='https://i.ibb.co/Q7Lh48LR/logo.png' class="logoimage insideheader w-[150%] lg:w-[180px] hover:rotate-10 transition-transform duration-500"></img></a></div>
+        <nav class="theinsideheaderright lg:w-4/9 md:w-2/5 w-1/3 flex justify-end">
+                  <div class="rightheadercontentcontainer flex justify-end items-center">
+                      <span class="searchinput lg:w-3/6 lg:inline-block hidden"><input type="text" class="thelinks searchinput border rounded-md w-[90%] pl-2 pr-2" placeholder="Search here"></input></span>
+                      <span class="lg:w-1/6 lg:inline-block hidden flex justify-end"><a href="#"><i class="fa-solid fa-magnifying-glass w-[20px] hover:scale-105"></i></img></a></span>
+                      <span class="lg:w-1/6 flex justify-end"><a href="#" class="thelinks"><i class="fa-solid fa-user w-[20px] hover:scale-105"></i></a></span>
+                      <button class="toggledark lg:w-1/6 pl-1 pr-1 cursor-pointer hover:scale-105" onClick="toggleDarkMode()"><i class="fa-solid fa-lightbulb"></i></button>
+                  </div>
+          </nav>
+       </header>
+
+       <!-- <div id="popup" class="border absolute border-black bg-white/90 p-10 md:p-20 rounded-tr-[10px] rounded-bl-[10px] w-[99%] h-[100vh] mx-auto top-[12%] z-3 shadow-lg">
+        <div class="flex items-center justify-center h-[100%] bg-[url('./assets/sale.png')] bg-no-repeat bg-cover bg-opacity-90">     
+            <button onclick="closepopup()" class="cursor-pointer border rounded-full bg-black text-white absolute right-[-1%] top-[-1%]"><i class="fa-solid fa-xmark" id="popupcontent"></i></button>
+            <div class="block text-center">
+                <div>Get 50% discount</div>
+                <div>
+                    <form action="submitpopup.html">
+                        <button class="mx-auto border rounded-tr-[10px] rounded-bl-[10px] shadow-lg p-5 mt-5 mb-5 bg-white text-black hover:bg-black hover:text-white cursor-pointer">Claim Your Offer Now</button></div>
+                    </form>
+                </div>
+        </div> -->
+
+
+       </div>
+
+  <section class="relative -z-50 ">
+    
+    <div class="banner bg-[url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnhjeHByanNmbG1wYnIwMXBqYTgzc2h3ajR6d2hiMWw5cjJ1YmlzNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xRz3yKv5KnHTcA/giphy.gif')] relative bg-no-repeat bg-cover bg-top z-0 md:flex md:flex-row md:items-top"> 
+      <div class="bannerleft block md:inline-block md:w-5/10 md:relative md:top-0">
+        <div class="textrotated text-center md:h-[70%] md:flex md:items-center md:justify-end">
+          <h1 class="textrotatedfont relative text-[1.5em] md:text-[250%] md:-rotate-90">WELCOME</h1>
+        </div>
+        <br>
+        <div class="textsmall text-[0.7em] p-2 text-center">
+          <p>To my humble site where I share my work and thoughts</p>
+          <p>I am a web developer and designer with a little bit of digital marketing</p>
+        </div>
+      </div>
+
+      <div class="bannerright block text-center relative p-2 md:inline-block md:w-5/10 hover:scale-105">
+        <img src="https://i.ibb.co/PsBKP6Dn/profile-photo-vincent.jpg" class="theimage relative w-[75%] mx-auto rounded-tr-[10px] rounded-bl-[10px] border hover:scale-105 hover:rotate-15" alt="Vincent Kiathadi Image" title="this is Vincent Kiathadi"></img>
+         <button id="indexbuttonbanner" class="rounded-tr-[10px] rounded-bl-[10px] border bg-white hover:scale-105 z-10 pl-2 pr-2 mt-4 mb-4 cursor-pointer"><a href="contact.html">Contact Me</a></button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="thetablecontainer bg-[url('https://i.ibb.co/zTgMPyWY/picture.jpg')] block mt-10 relative md:h-[80vh] bg-no-repeat bg-cover bg-top mb-10 text-black">
+    <div class="overlay absolute w-full h-full bg-white opacity-5"></div>
+    <div id="tableinsideleft" class="p-5 block text-center md:w-[60%] md:text-left md:pt-15 md:pl-15">
+        <h2 class="tabletitle text-[1.3em] md:text-[220%]">DO YOU NEED A WEBSITE FAST?</h2>
+        <p class = "tableleftp text-[0.7em] mt-3">Vincent Kiathadi is an aspiring software developer with additional background in digital marketing. With hands-on experience in crafting and optimizing online campaigns, Vincent is now channeling his analytical mindset and creative problem-solving skills into building web applications and learning modern development tools. Driven by curiosity and a passion for tech, he's on a journey to bridge marketing and code.</p>
+        <p class = "tableleftp text-[0.7em]">Furthermore he can also <b>get things done ASAP. No long queue, no hidden cost.</b> All can be done reliably and affordably</p>
+        <table class="thetable text-center text-[0.5em] mt-5 mb-2 bg-gray-200 bg-opacity-50 border border-white rounded-lg" cellspacing="10">
+            <tr>
+                <th class="stackcolumn1 border border-white text-center p-3"><img class="skillicontable w-[25px] mx-auto animate-bounce" src="https://i.ibb.co/yn14KWDd/speedometer.png" alt="speed" title="speed"></img></th>
+                <th class="stackcolumn2 border border-white text-center p-3"><img class="skillicontable w-[25px] mx-auto animate-bounce" src="https://i.ibb.co/jkkgWWcg/charisma.png" alt="aesthetic" title="aesthetic"></img></th>
+                <th class="stackcolumn3 border border-white text-center p-3"><img class="skillicontable w-[25px] mx-auto animate-bounce" src="https://i.ibb.co/xSsw31sJ/idea.png" alt="smart" title="smart"></th>
+            </tr>
+            <tr>
+                <td class="stackcolumn1 border border-white text-center p-3"><big><b>SPEED</b></big></td>
+                <td class="stackcolumn2 border border-white text-center p-3"><big><b>AESTHETIC</b></big></td>
+                <td class="stackcolumn3 border border-white text-center p-3"><big><b>INTELLIGENCE</b></big></td>
+            </tr>
+            <tr>
+                <td class="stackcolumn1 border border-white text-center p-3">I can craft and launch a fully functioning website within 1 week</td>
+                <td class="stackcolumn2 border border-white text-center p-3">I can design a beautiful web that attracts your high-paying client</td>
+                <td class="stackcolumn3 border border-white text-center p-3">I can solve your problems based on your requirements</td>
+            </tr>
+        </table>
+    </div>
+  </section>
+
+<section class="theskillscontainer bg-[url('https://i.ibb.co/4R75Q55Q/5968949.jpg')] block mt-10 relative md:h-[150vh] lg:h-[150vh] bg-no-repeat bg-cover bg-top mb-10 text-black">
+    <!-- <div class="skilloverlay absolute w-full h-full bg-black opacity-20 z-0"></div> -->
+        <h2 class="skills-title text-center md:text-3xl lg:text-5xl md:mt-10">My Skills</h2>
+    <br>
+    <div class="skills-container block pl-1 pr-1 md:grid md:grid-cols-3 md:grid-row-3 md:gap-5">
+                <div class="logocontentcontainer contentinside p-3 mb-2 text-center border border-black rounded-md content-center md:col-start-1 md:row-start-1">
+                    <img src="https://i.ibb.co/n8gPCjMV/coding.png" class="logocontent w-[30px] md:w-[100px] mx-auto animate-pulse"><br>
+                    <p class="contenttitle">WEBSITE DESIGN</p>
+                </div>
+                <div class="textcontentcontainer contentinside p-3 mb-2 text-center border border-black rounded-md md:col-start-1 md:row-start-2 md:row-span-2">
+                    <div class="texttitle">
+                        Need help in getting your dream website? I can help you! Here are what I can promise you:
+                        <ul>
+                            <li>State-of-the art website and web app</li>
+                            <li>Include 1 domain and free hosting plan for 1 year</li>
+                            <li>All-time support for any questions and doubts</li>
+                            <li>Fully supportive customer service team</li>
+                            <li>Guaranteed to run within 1 week</li>
+                            <li>Warranty provided for 3 years</li>
+                        </ul>
+                        <br>
+                        <p class="pricetext bg-black text-white pl-5 pr-5 pt-3 pb-3 rounded-md hover:scale-105 cursor-pointer"><small>Year of Experience</small><big><br> <b>1 Year</b></big></p>
+                    </div>
+                        <button class="skillbutton rounded-tr-[10px] rounded-bl-[10px] border bg-white text-black p-2 hover:bg-black-200 cursor-pointer mt-4 mb-4 hover:scale-105">
+                            <a href='project.html'>Learn More</a>
+                        </button>
+                </div>
+                
+                <div class="logocontentcontainer contentinside p-3 mb-2 text-center border border-black rounded-md content-center md:col-start-2 md:row-start-1">
+                    <p class="contenttitle">DIGITAL MARKETING</p>
+                    <img src="https://i.ibb.co/N2Td70DB/digital-marketing.png" class="logocontent w-[30px] md:w-[100px] mx-auto animate-pulse">
+                </div>
+                <div class="textcontentcontainer contentinside p-3 mb-2 text-center border border-black rounded-md md:col-start-2 md:row-start-2 md:row-span-2">
+                    <div class="texttitle">
+                        Looking to find more ways to make more Rp or $? Let us improve your bottom line
+                        <ul>
+                            <li>Campaign planning and execution by team of experts</li>
+                            <li>Monthly optimization and reporting</li>
+                            <li>Result guaranteed within 6 months</li>
+                            <li>All-time support for any questions and doubts</li>
+                            <li>Fully supportive customer service team</li>
+                        </ul>
+                        <br>
+                        <p class="pricetext bg-black text-white pl-5 pr-5 pt-3 pb-3 rounded-md hover:scale-105 cursor-pointer"><small>Years of Experience</small><big><br> <b>5 Years</b></big></p>
+                    </div>
+                    <br>
+                    <button class="skillbutton rounded-tr-[10px] rounded-bl-[10px] border bg-white text-black p-2 hover:bg-black-200 cursor-pointer mt-4 mb-4 hover:scale-105">
+                        <a href='project.html'>Learn More</a>
+                    </button>
+                </div>
+                <div class="logocontentcontainer contentinside p-3 mb-2 text-center border border-black rounded-md content-center md:col-start-3 md:row-start-1">
+                    <img src="https://i.ibb.co/FLcsF69V/image-editing.png" class="logocontent w-[30px] md:w-[100px] mx-auto animate-pulse">
+                    <br>
+                    <p class="contenttitle">IMAGE/VIDEO EDITING</p>
+                </div>
+                <div class="textcontentcontainer contentinside p-5 mb-2 text-center border border-black rounded-md md:col-start-3 md:row-start-2 md:row-span-2">
+                    <div class="texttitle">
+                        Always dress to impress. Good photo/video will show your best side to the world. Here is what I can promise:
+                        <ul>
+                            <li>Flawless editing that make your jaw drop</li>
+                            <li>Hollywood grade movie editing skills </li>
+                            <li>Top notch state of the art editing software</li>
+                            <li>All-time support for any questions and doubts</li>
+                            <li>Fully supportive customer service team</li>
+                        </ul>
+                        <br>
+                        <p class="pricetext bg-black text-white pl-5 pr-5 pt-3 pb-3 rounded-md hover:scale-105 cursor-pointer"><small>Years of experience</small><big><br> <b>4 Years</b></big></p>
+                    </div>
+                    <br>
+                    <button class="skillbutton rounded-tr-[10px] rounded-bl-[10px] border bg-white text-black p-2 hover:bg-black-200 cursor-pointer mt-4 mb-4 hover:scale-105"><a href='project.html'>Learn More</a></button>
+                </div>
+    </div>
+</section>
+  <br><br>
+  <footer class="thefootercontainer bg-black text-white p-5">
+    <div class="footercontent block md:flex md:flex-row md:justify-between">
+        <div class="footercontentleft footercontentinside block text-center md:w-1/3">
+            <p><h3  class="text-2xl bold underline">Follow Me</h3></p>
+           
+            <div class="socialmedia">
+                <span><a href="https://www.instagram.com/valkh95/" target="blank"><i class="fa-brands fa-instagram hover:scale-105"></i></a></span>
+                <span><a href="https://www.facebook.com/vincentkiathadi/" target="blank"><i class="fa-brands fa-facebook hover:scale-105"></i></a></span>
+                <span><a href="https://www.linkedin.com/in/vincent-kiathadi/" target="blank"><i class="fa-brands fa-linkedin hover:scale-105"></i></a></span>
+                <span><a href="https://github.com/vincentsim01" target="blank"><i class="fa-brands fa-github hover:scale-105"></i></a></span>
+                <span><a href="https://www.youtube.com/@VincentTravelStory" target="blank"><i class="fa-brands fa-youtube hover:scale-105"></i></a></span>
+            </div>
+
+        </div>
+        <div class="footercontentmiddle footercontentinside md:w-1/3 mb-3 text-center">
+            <p class="hover:underline"><h3 class="text-2xl bold underline">Contact Me</h3></p>
+            <p class="hover:underline"><a href="https://wa.me/6281282558686" target="blank">WhatsApp: +62 812 8255 8686</a></p>
+            <p class="hover:underline"><a href="tel:+6281282558686">Phone: +62 812 8255 8686</a></p>
+            <p class="hover:underline"><a href="mailto:vincentkiathadigmail.com">Email: vincentkiathadi@gmail.com</a></p><br><br>
+            <p class="hover:underline">Address: Pasar Tanah Abang Blok A, Jakarta, Indonesia</p>
+        </div>
+        <div class="footercontentright footercontentinside md:w-1/3 mb-3 text-center">
+            <p><h3  class="text-2xl bold underline">Legal & Payment</h3></p>
+            <p class="hover:underline"><a href="#">FAQ</a></p>
+            <p class="hover:underline"><a href="#">Privacy Policy</a></p>
+            <p class="hover:underline"><a href="#">Delivery Policy</a></p>
+            <p class="hover:underline"><a href="#">Refund Policy</a></p>
+            <div>
+
+                <br>
+
+               
+                <p class="text-2xl bold underline">We Accept</p>
+
+                
+                <br>
+                <div class="paymentlogocontainer flex flex-row items-center justify-center">
+                    <div class="paymentlogo ml-1">
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                    </div>
+                    <div class="paymentlogo ml-1">
+                        <i class="fa-brands fa-cc-visa"></i>
+                    </div>
+                    <div class="paymentlogo ml-1">
+                        <i class="fa-brands fa-cc-paypal"></i>
+
+                    </div>
+                    <div class="paymentlogo ml-1">
+                        <i class="fa-brands fa-bitcoin"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+          
+        </div>
+    </div><br><br>
+      <div><p>Copyright &copy; 2025 Vincent Kiathadi</p></div>
+    </footer>
+<script src="./js/script.js"></script>
+<script src="./js//indexscript.js"></script>
+
+</body>
+</html>

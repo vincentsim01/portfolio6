@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<div lang="en">
+<head> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+            </style>
+        <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="Welcome to Project Page. Let's see my work projects."> <meta name="robots" content="index, follow"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta property="og:title" content="Vincent Kiathadi's Projects"> <meta property="og:description" content="Discover the past projects of award-winning website developer in town. Let's connect and explore all possibilities"> <meta property="og:image" content="https://i.ibb.co/k2pYPYTf/Screenshot-2025-07-03-102851.png"> <meta property="og:type" content="website"> <link rel="icon" href="../assets/icons8-done-48.png" type="image/x-icon"> 
+        <!-- <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/project.css"> -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+        </style>
+         <style>
+            .font-michroma {
+              font-family: 'Michroma', sans-serif;
+            }
+          </style>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://kit.fontawesome.com/b7f46329c5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/projecttimeline.css">
+        <link rel="stylesheet" href="./css/project2.css">
+ <title>My Projects</title>
+</head>
+<body class="font-michroma">
+
+    <header class="theheader flex justify-center top-[0px] sticky bg-white z-50 shadow-lg p-5 pt-8">
+        <nav class="theinsideheaderleft w-4/9 hidden lg:inline-block">
+              <a href="index.html" class="thelinks hover:underline text-sm mr-2">HOME</a>
+              <a href="about.html" class="thelinks hover:underline text-sm mr-2">ABOUT</a>
+              <a href="contact.html" class="thelinks hover:underline text-sm mr-2">CONTACT</a>
+              <a href="project.html" class="thelinks hover:underline text-sm">PROJECTS</a>
+        </nav>
+              <div class="menuburgercontainer cursor-pointer lg:hidden md:w-2/5 w-1/3 flex justify-start"><img src="https://i.ibb.co/TD8qWCZJ/menu.png"  class="menuburger w-[20px]" title="burger"></img></div>
+              <div class="menunavburgercontainer hidden none w-[80%] border absolute left-0 bg-white p-2 rounded-md h-screen shadow-lg">
+                  <div class="closeburgernav cursor-pointer absolute -top-3 -right-3 border bg-black rounded-full hover:bg-black-300 text-white"><i class="fa-solid fa-circle-xmark"></i></div>
+                  <p class="hover:underline mt-5 mb-3"><a href="index.html" class="thelinksburger hover:underline">HOME</a></p>
+                  <p class="hover:underline mb-3"><a href="about.html" class="thelinksburger hover:underline">ABOUT</a></p>
+                  <p class="hover:underline mb-3"><a href="contact.html" class="thelinksburger hover:underline">CONTACT</a></p>
+                  <p class="hover:underline mb-3"><a href="project.html" class="thelinksburger hover:underline">PROJECTS</a></p>
+              </div>
+        <div class="logoimagecontainer lg:w-1/9 md:w-1/5 w-1/3"><a href="index.html"><img src='https://i.ibb.co/Q7Lh48LR/logo.png' class="logoimage insideheader hover:rotate-10 transition-transform duration-500 w-[150%] lg:w-[180px]"></img></a></div>
+        <nav class="theinsideheaderright lg:w-4/9 md:w-2/5 w-1/3 flex justify-end">
+                  <div class="rightheadercontentcontainer flex justify-end">
+                      <span class="searchinput lg:w-3/5 lg:inline-block hidden"><input type="text" class="thelinks searchinput border rounded-md w-[90%] pl-2 pr-2" placeholder="Search here"></input></span>
+                      <span class="lg:w-1/6 lg:inline-block hidden flex justify-end"><a href="#"><i class="fa-solid fa-magnifying-glass w-[20px] hover:scale-105"></i></img></a></span>
+                      <span class="lg:w-1/6 flex justify-end"><a href="#" class="thelinks"><i class="fa-solid fa-user w-[20px] hover:scale-105"></i></a></span>
+                      <button class="toggledark lg:w-1/6 pl-1 pr-1 cursor-pointer hover:scale-105" onClick="toggleDarkMode()"><i class="fa-solid fa-lightbulb"></i></button>
+                  </div>
+          </nav>
+       </header>
+ <section class="z-0"> 
+    <div class="bannerproject relative md:h-[60vh] h-[40vh] bg-[url('https://i.ibb.co/bMcyV9JQ/project.jpg')] bg-no-repeat bg-cover bg-top z-0">
+      <div class="projectoverlay absolute w-full h-full bg-black opacity-50 z-0"></div>    
+      <div class="theprojectcontent bsolute z-1 w-full h-full  flex flex-col items-center justify-center z-0">   
+        <h1 class="myprojectcontenttitle text-white text-3xl text-shadow md:text-6xl lg:text-8xl font-bold z-0 animate-bounce">MY PROJECTS</h1>   
+        <br><br>  
+    </div> 
+</div> 
+</section>
+
+
+
+<section class="z-50">
+<div class="theprojectcontent2 block bg-black text-white md:h-[40vh] p-1 md:flex md:gap-1 md:justify-between md:items-top md:p-3 text-center z-50 group">
+
+    <div class="theprojectcontent2inside block text-center w-full border border-white rounded-md mt-3 mb-3 pt-3 pb-3 p-1 md:p-2 md:inline-block md:w-[31%] md:hover:flex-grow md:transition-all md:duration-[1300ms] md:hover:opacity-100 md:group-hover:opacity-50 md:hover:!opacity-100">
+        <img src="https://i.gifer.com/MN8H.gif" class="theprojectcontent2insideimage mx-auto  rounded-full mb-3 w-[30%]" alt="Project 1">
+        <h2>Software Development</h2>
+        <!-- <div class="inline-block"><img src="https://i.ibb.co/GN0X5sB/stars.png" alt="stars" class="staricon mx-auto w-[28%] mb-2" border="0"/></div> -->
+        <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 md:hidden mx-auto border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105" onclick="togglecontenttext('software')">View Project</button>
+        <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 border mx-auto hidden md:block rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105" onclick="togglecontenttext2software()">View Project</button>
+        <div class="projectcontenttext hidden p-2 border bg-black border-white rounded-md z-50 md:absolute md:w-full md:left-0 md:z-50" id="softwareprojectcontenttextmb">
+            <div class="mb-5 underline text-[0.8em]">Software Development Project</div>
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                <div>   
+                    <img src="./assets/unikloh.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle">
+                    <div class="text-[0.9em] mb-3 mt-3">Unik Loh!</div>
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="./project/unikloh.html" target='blank'>Extract All</a></button>
+                    
+                </div>
+            </div>
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                <div>   
+                    <img src="./assets/unikloh.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle">
+                    <div class="text-[0.9em] mb-3 mt-3">Unik Loh!</div>
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="./project/unikloh.html" target='blank'>Extract All</a></button>
+                    
+                </div>
+            </div>
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                <div>   
+                    <img src="./assets/Netflix.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle">
+                    <div class="text-[0.9em] mb-3 mt-3">Netflix</div>
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="https://github.com/vincentsim01/testnetflix.git" target='blank'>Extract All</a></button>
+                    
+                </div>
+            </div>
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                <div>
+                    <img src="./assets/Mimpi Indonesia.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle">
+                    <div class="text-[0.9em] mb-3 mt-3">Mimpi Indonesia</div>
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="https://github.com/vincentsim01/mimpiindonesiareact.git" target='blank'>Extract All</a></button>
+                </div>
+            </div>
+           
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                    <div>
+                        <img src="./assets/cafelicious.png" class="projectdetailimage mx-auto">
+                    </div>
+                    <div class="projectdetailtitle">
+                        <div class="text-[0.9em] mb-3 mt-3">Cafelicious</div>
+                        <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href='https://github.com/vincentsim01/cafelicious.git' target='blank'>Extract All</a></button>
+                    </div>
+                </div>
+                <div class="buttonprojectdetailcontainer">
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105" onclick="togglecontenttext('software')">Close</button>
+                </div>
+
+            </div>
+
+
+
+    </div>
+    <div class="theprojectcontent2inside border border-white rounded-md mt-3 mb-3 pt-3 pb-3 block text-center w-full  md:p-2 md:inline-block md:w-[31%] md:hover:flex-grow md:transition-all md:duration-[1300ms] md:hover:opacity-100 md:group-hover:opacity-50 md:justify-center md:text-center md:hover:!opacity-100">
+        <img src="https://i.ibb.co/YFMmk9Vd/images-marketing.jpg" title="digital marketing" class="theprojectcontent2insideimage mx-auto rounded-full mb-3 w-[30%]" alt="Project 2">
+        <h2>Digital Marketing</h2>
+        <!-- <img src="https://i.ibb.co/GN0X5sB/stars.png" alt="stars" class="staricon mx-auto w-[30%]" border="0"> -->
+        <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 border mx-auto md:hidden rounded-tr-[10px] rounded-bl-[10px] p-2 mx-auto cursor-pointer hover:scale-105" onclick="togglecontenttext('marketing')">View Project</button>
+        <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 border mx-auto hidden  md:block rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105" onclick="togglecontenttext2marketing()">View Project</button>
+
+        <div class="projectcontenttext hidden p-2 border bg-black border-white rounded-md  md:absolute md:w-full md:left-0 md:z-50" id="marketingprojectcontenttextmb">
+            <div class="mb-5 underline text-[0.8em]">Digital Marketing Projects</div>
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                <div>
+                    <img src="./assets/thedoodlepeople.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle">
+                    <div class="text-[0.9em] mb-3 mt-3">The Doodle People</div>
+                    <button class="extractall text-[0.8em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href='https://www.thedoodlepeople.com/animation' target="blank">Extract All</a></button>
+                </div>
+            </div>
+
+           
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                <div>
+                    <img src="./assets/equilibrio.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle">
+                    <div class="text-[0.9em] mb-3 mt-3">Equilibrio Chiropractic</div>
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href='https://equilhealth.com/' target="blank">Extract All</a></button>
+                </div>
+            </div>
+            
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+            
+                    <div>
+             
+                        <img src="./assets/htmmedico.png" class="projectdetailimage mx-auto">
+                    </div>
+                    <div class="projectdetailtitle">
+                        <div class="text-[0.9em] mb-3 mt-3">HTM Medico</div>
+                        
+                        <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href='https://www.htmmedico.com.sg/' target="blank">Extract All</a></button>
+                    </div>
+                </div>
+                <span>                
+
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105" onclick="togglecontenttext('marketing')">Close</button>
+                </span>
+
+            </div>
+
+ 
+
+    </div>
+    <div class="theprojectcontent2inside  text-center w-full border border-white rounded-md mt-3 mb-3 pt-3 pb-3 p-1 z-5 md:p-2 md:inline-block md:w-[31%] md:hover:flex-grow md:transition-all md:duration-[1300ms] md:hover:opacity-100 md:group-hover:opacity-50 md:hover:!opacity-100">
+        <img src="https://i.gifer.com/2GU.gif" class="theprojectcontent2insideimage mx-auto rounded-full mb-3 w-[20%]" alt="Project 3">
+        <h2>Image Editing</h2>
+        <!-- <img src="https://i.ibb.co/GN0X5sB/stars.png" alt="stars" class="staricon mx-auto w-[30%]" border="0"> -->
+        <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 border md:hidden rounded-tr-[10px] rounded-bl-[10px] p-2 mx-auto cursor-pointer hover:scale-105" onclick="togglecontenttext('image')">View Project</button>
+        <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 border hidden md:block rounded-tr-[10px] rounded-bl-[10px] p-2 mx-auto cursor-pointer hover:scale-105" onclick="togglecontenttext2image()">View Project</button>
+        
+        <div class="projectcontenttext hidden p-2 border border-white rounded-md bg-black md:absolute md:w-full md:left-0 md:z-50" id="imageprojectcontenttextmb">
+            <div class="mb-5 underline text-[0.8em]">Image Projects</div>
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                <div>
+                    
+                    <img src="./assets/toko santosa makmur.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle">
+                    <div class="text-[0.9em] mb-3 mt-3">Toko Santosa Makmur</div>
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="www.santosamakmur.com" target="blank">Extract All</a></button>
+                </div>
+            </div>
+         
+ -->
+
+            <!-- <div class="projectdetail border border-white rounded-tr-[10px] rounded-bl-[10px] p-3 mb-5">
+                <div>
+                   
+                    <img src="https://i.ibb.co/x9dVs2F/ds-mugen.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle">
+                    <div class="text-[0.9em] mb-3 mt-3">Demon Slayer Mugen Train</div>
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105">Extract All</button>
+                </div>
+            </div> -->
+            <span>
+
+
+                <button class="extractall text-[0.8em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105" onclick="togglecontenttext('image')">Close</button>
+            </span>
+
+        </div>
+
+
+    </div>
+</div>
+</div>
+</section>
+
+<section class="block w-[100%] absolute top-[50vh] hidden h-auto z-10 pl-50 pr-50 pb-50 pt-0 bg-white/80 text-white" id="modalOverlaysoftware">
+    <div class="flex flex-row h-[10vh] items-top justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
+    <div class="projectcontenttext hidden p-2 border bg-black border-white rounded-md z-50 md:w-full md:left-0 md:z-50" id="softwareprojectcontenttext">
+        <div class="mb-5 underline text-[0.8em]">Software Development Projects</div>
+        <div class="projectdetail border border-white rounded-md p-3 mb-5">
+            <div>   
+                <img src="./assets/unikloh.png" class="projectdetailimage mx-auto">
+            </div>
+            <div class="projectdetailtitle text-center">
+                <div class="text-[0.9em] mb-3 mt-3">Unik Loh!</div>
+                <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="./project/unikloh.html" target='blank'>Extract All</a></button>
+            </div>
+        </div>
+        <div class="projectdetail border border-white rounded-md p-3 mb-5">
+            <div>   
+                <img src="./assets/Netflix.png" class="projectdetailimage mx-auto">
+            </div>
+            <div class="projectdetailtitle text-center">
+                <div class="text-[0.9em] mb-3 mt-3">Netflix</div>
+                <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="https://github.com/vincentsim01/testnetflix.git" target='blank'>Extract All</a></button>
+            </div>
+        </div>
+        <div class="projectdetail border border-white rounded-md p-3 mb-5">
+            <div>
+                <img src="./assets/Mimpi Indonesia.png" class="projectdetailimage mx-auto">
+            </div>
+            <div class="projectdetailtitle text-center">
+                <div class="text-[0.9em] mb-3 mt-3">Mimpi Indonesia</div>
+                <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="https://github.com/vincentsim01/mimpiindonesiareact.git" target='blank'>Extract All</a></button>
+            </div>
+        </div>
+       
+        <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                <div>
+                    <img src="./assets/cafelicious.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle text-center">
+                    <div class="text-[0.9em] mb-3 mt-3">Cafelicious</div>
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href='https://github.com/vincentsim01/cafelicious.git' target='blank'>Extract All</a></button>
+                </div>
+            </div>
+            <!-- <div class="buttonprojectdetailcontainer text-center">
+                <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105" onclick="togglecontenttext('software')">Close</button>
+            </div> -->
+
+        </div>
+        <div class="flex flex-row h-[20vh] items-end justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
+    </section>
+
+    <section class="block w-[100%] absolute top-[50vh] hidden h-auto z-10 pl-50 pr-50 pb-50 pt-0 bg-white/80 text-white" id="modalOverlaymarketing">
+        <div class="flex flex-row h-[10vh] items-top justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
+        <div class="projectcontenttext hidden p-2 border bg-black border-white rounded-md md:w-full md:left-0 md:z-50" id="marketingprojectcontenttext">
+            <div class="mb-5 underline text-[0.8em]">Digital Marketing Projects</div>
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                <div>
+                    <img src="./assets/thedoodlepeople.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle text-center">
+                    <div class="text-[0.9em] mb-3 mt-3">The Doodle People</div>
+                    <button class="extractall text-[0.8em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href='https://www.thedoodlepeople.com/animation' target="blank">Extract All</a></button>
+                </div>
+            </div>
+
+           
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+                <div>
+                    <img src="./assets/equilibrio.png" class="projectdetailimage mx-auto">
+                </div>
+                <div class="projectdetailtitle text-center">
+                    <div class="text-[0.9em] mb-3 mt-3">Equilibrio</div>
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href='https://equilhealth.com/' target="blank">Extract All</a></button>
+                </div>
+            </div>
+            
+            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+            
+                    <div>
+             
+                        <img src="./assets/htmmedico.png" class="projectdetailimage mx-auto">
+                    </div>
+                    <div class="projectdetailtitle text-center">
+                        <div class="text-[0.9em] mb-3 mt-3">HTM Medico</div>
+                        
+                        <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href='https://www.htmmedico.com.sg/' target="blank">Extract All</a></button>
+                    </div>
+                </div>
+                <!-- <div class="block text-center">                
+
+                    <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105" onclick="togglecontenttext('marketing')">Close</button>
+                </div> -->
+
+            </div>
+            <div class="flex flex-row h-[20vh] items-end justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
+            </section>
+
+                
+            <section class="block w-[100%] absolute top-[50vh] hidden h-auto z-10 pl-50 pr-50 pb-50 pt-0 bg-white/80 text-white" id="modalOverlayimage">
+                <div class="flex flex-row h-[10vh] items-top justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
+            <div class="projectcontenttext hidden p-2 border border-white rounded-md bg-black md:w-full md:left-0 md:z-50" id="imageprojectcontenttext">
+                <div class="mb-5 underline text-[0.8em]">Image Projects</div>
+                <div class="projectdetail border border-white rounded-md p-3 mb-5 text-center">
+                    <div>
+                        
+                        <img src="./assets/toko santosa makmur.png" class="projectdetailimage mx-auto">
+                    </div>
+                    <div class="projectdetailtitle text-center">
+                        <div class="text-[0.9em] mb-3 mt-3">Toko Santosa Makmur</div>
+                        <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer mx-auto hover:scale-105"><a href="www.santosamakmur.com" target="blank">Extract All</a></button>
+                    </div>
+                </div>
+             
+                <!-- <div class="projectdetail border border-white rounded-tr-[10px] rounded-bl-[10px] p-3 mb-5">
+                    <div>
+                        <img src="https://i.ibb.co/0RMrd9fH/Hari-Bertemu-Kamu.png" class="projectdetailimage mx-auto">
+                    </div>
+                    <div class="projectdetailtitle text-center mx-auto">
+                        <div class="text-[0.9em] mb-3 mt-3">Hari Bertemu Kamu</div>
+                        <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer left-[50%] hover:scale-105">Extract All</button>
+                    </div>
+                </div>
+    
+                <div class="projectdetail border border-white rounded-tr-[10px] rounded-bl-[10px] p-3 mb-5">
+                    <div>
+                       
+                        <img src="https://i.ibb.co/x9dVs2F/ds-mugen.png" class="projectdetailimage mx-auto">
+                    </div>
+                    <div class="projectdetailtitle text-center">
+                        <div class="text-[0.9em] mb-3 mt-3">Demon Slayer Mugen Train</div>
+                        <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer mx-auto hover:scale-105">Extract All</button>
+                    </div>
+                </div> -->
+                <!-- <block class=" block text-center mx-auto">
+    
+    
+                    <button class="extractall text-[0.8em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105" onclick="togglecontenttext('image')">Close</button>
+                </block> -->
+    
+            </div>
+            <div class="flex flex-row h-[20vh] items-end justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
+        </section>
+
+
+
+
+
+
+ <br><br>
+
+    <!-- <section class="timelinecontainer relative">
+        <div class="wavy-line -z-1">
+            <svg class="wavy-path" viewBox="0 0 10 800" preserveAspectRatio="none">
+                <path class="animated-path -z-1" d="M5,0 Q15,100 5,200 Q-5,300 5,400 Q15,500 5,600 Q-5,700 5,800" 
+                      stroke="url(#gradient)" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                        <stop offset="25%" style="stop-color:#4ecdc4;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#45b7d1;stop-opacity:1" />
+                        <stop offset="75%" style="stop-color:#96ceb4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#feca57;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="timeline-item">
+            <div class="milestone-dot"></div>
+            <div class="content">
+                <div class="year">2010</div>
+                <div class="title">Company Inception</div>
+                <div class="description">
+                    Our journey began with a vision to revolutionize the industry. Founded by passionate entrepreneurs with a dream to create innovative solutions that would transform how businesses operate.
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="milestone-dot"></div>
+            <div class="content">
+                <div class="year">2013</div>
+                <div class="title">First Major Milestone</div>
+                <div class="description">
+                    Achieved our first breakthrough by launching our flagship product. This marked the beginning of our growth trajectory and established our presence in the market with innovative technology solutions.
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="milestone-dot"></div>
+            <div class="content">
+                <div class="year">2015</div>
+                <div class="title">Expansion & Growth</div>
+                <div class="description">
+                    Expanded our operations internationally and doubled our team size. Introduced cutting-edge features that set new industry standards and attracted major enterprise clients.
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="milestone-dot"></div>
+            <div class="content">
+                <div class="year">2017</div>
+                <div class="title">Innovation Excellence</div>
+                <div class="description">
+                    Launched our next-generation platform with AI-powered capabilities. Received multiple industry awards for innovation and established strategic partnerships with leading tech companies.
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="milestone-dot"></div>
+            <div class="content">
+                <div class="year">2022</div>
+                <div class="title">Market Leadership</div>
+                <div class="description">
+                    Became the industry leader with over 1 million users worldwide. Introduced sustainable practices and launched our global impact initiative, setting new benchmarks for corporate responsibility.
+                </div>
+            </div>
+        </div>
+    </div>
+    </section> -->
+
+
+    <br><br>
+
+    <footer class="thefootercontainer bg-black text-white p-5">
+        <div class="footercontent block md:flex md:flex-row md:justify-between">
+            <div class="footercontentleft footercontentinside block text-center md:w-1/3">
+                <p><h3  class="text-2xl bold underline">Follow Me</h3></p>
+               
+                <div class="socialmedia">
+                    <span><a href="https://www.instagram.com/valkh95/" target="blank"><i class="fa-brands fa-instagram hover:scale-105"></i></a></span>
+                    <span><a href="https://www.facebook.com/vincentkiathadi/" target="blank"><i class="fa-brands fa-facebook hover:scale-105"></i></a></span>
+                    <span><a href="https://www.linkedin.com/in/vincent-kiathadi/" target="blank"><i class="fa-brands fa-linkedin hover:scale-105"></i></a></span>
+                    <span><a href="https://github.com/vincentsim01" target="blank"><i class="fa-brands fa-github hover:scale-105"></i></a></span>
+                    <span><a href="https://www.youtube.com/@VincentTravelStory" target="blank"><i class="fa-brands fa-youtube hover:scale-105"></i></a></span>
+                </div>
+    
+            </div>
+            <div class="footercontentmiddle footercontentinside md:w-1/3 mb-3 text-center">
+                <p class="hover:underline"><h3 class="text-2xl bold underline">Contact Me</h3></p>
+                <p class="hover:underline"><a href="https://wa.me/6281282558686" target="blank">WhatsApp: +62 812 8255 8686</a></p>
+                <p class="hover:underline"><a href="tel:+6281282558686">Phone: +62 812 8255 8686</a></p>
+                <p class="hover:underline"><a href="mailto:vincentkiathadigmail.com">Email: vincentkiathadi@gmail.com</a></p><br><br>
+                <p class="hover:underline">Address: Pasar Tanah Abang Blok A, Jakarta, Indonesia</p>
+            </div>
+            <div class="footercontentright footercontentinside md:w-1/3 mb-3 text-center">
+                <p><h3  class="text-2xl bold underline">Legal & Payment</h3></p>
+                <p class="hover:underline"><a href="#">FAQ</a></p>
+                <p class="hover:underline"><a href="#">Privacy Policy</a></p>
+                <p class="hover:underline"><a href="#">Delivery Policy</a></p>
+                <p class="hover:underline"><a href="#">Refund Policy</a></p>
+                <div>
+    
+                    <br>
+    
+                   
+                    <p class="text-2xl bold underline">We Accept</p>
+    
+                    
+                    <br>
+                    <div class="paymentlogocontainer flex flex-row items-center justify-center">
+                        <div class="paymentlogo ml-1">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </div>
+                        <div class="paymentlogo ml-1">
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </div>
+                        <div class="paymentlogo ml-1">
+                            <i class="fa-brands fa-cc-paypal"></i>
+    
+                        </div>
+                        <div class="paymentlogo ml-1">
+                            <i class="fa-brands fa-bitcoin"></i>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+              
+            </div>
+        </div><br><br>
+          <div><p>Copyright &copy; 2025 Vincent Kiathadi</p></div>
+        </footer>
+    
+    
+    
+<script src="./js/projectscript.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
