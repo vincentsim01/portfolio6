@@ -359,3 +359,8 @@ textarea{
     90% { transform: rotate(1deg) translateX(1px); }
     100% { transform: rotate(0deg); }
 }
+
+
+        .none{
+            display: none;
+        }

@@ -160,3 +160,21 @@ function toggleDarkMode(){
     document.querySelector('footer').classList.toggle('white');
     document.body.classList.toggle('dark')
 }
+
+function showdetailproject(){
+    document.getElementById('projectdetail').classList.toggle('hidden');
+}
+
+const projecttext = document.getElementById('projecttext');
+const projecttextburger = document.getElementById('projecttextburger');
+const detailproject = document.getElementById('detailproject');
+const detailprojectburger = document.getElementById('detailprojectburger');
+
+
+projecttext.addEventListener('mouseenter', function(){
+    detailproject.classList.toggle('hidden');
+})
+
+projecttextburger.addEventListener('mouseenter', function(){
+    detailprojectburger.classList.toggle('hidden');
+})
