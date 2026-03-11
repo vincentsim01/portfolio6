@@ -165,16 +165,33 @@ function showdetailproject(){
     document.getElementById('projectdetail').classList.toggle('hidden');
 }
 
+// const projecttext = document.getElementById('projecttext');
+// const projecttextburger = document.getElementById('projecttextburger');
+// const detailproject = document.getElementById('detailproject');
+// const detailprojectburger = document.getElementById('detailprojectburger');
+
+
+// projecttext.addEventListener('mouseenter', function () {
+//     alert('PROJECTS TEXT HOVERED')
+//     detailproject.classList.remove('none');
+// });
+
+// projecttext.addEventListener('mouseleave', function () {
+//     detailproject.classList.add('none');
+// });
+
+document.addEventListener("DOMContentLoaded", function(){
+
 const projecttext = document.getElementById('projecttext');
-const projecttextburger = document.getElementById('projecttextburger');
 const detailproject = document.getElementById('detailproject');
-const detailprojectburger = document.getElementById('detailprojectburger');
 
+projecttext.addEventListener('mouseenter', function () {
+    alert('PROJECTS TEXT HOVERED');
+    detailproject.classList.remove('hidden');
+});
 
-projecttext.addEventListener('mouseenter', function(){
-    detailproject.classList.toggle('hidden');
-})
+projecttext.addEventListener('mouseleave', function () {
+    detailproject.classList.add('hidden');
+});
 
-projecttextburger.addEventListener('mouseenter', function(){
-    detailprojectburger.classList.toggle('hidden');
-})
+});

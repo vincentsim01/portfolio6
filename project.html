@@ -27,6 +27,8 @@
         <link rel="stylesheet" href="./css/project2.css">
  <title>My Projects</title>
 </head>
+<script src="./js/projectscript.js"></script>
+<script src="./js/script.js"></script>
 <body class="font-michroma">
 
     <header class="theheader flex justify-center top-[0px] sticky bg-white z-50 shadow-lg p-5 pt-8">
@@ -34,15 +36,29 @@
               <a href="index.html" class="thelinks hover:underline text-sm mr-2">HOME</a>
               <a href="about.html" class="thelinks hover:underline text-sm mr-2">ABOUT</a>
               <a href="contact.html" class="thelinks hover:underline text-sm mr-2">CONTACT</a>
-              <a href="project.html" id="projecttext" class="thelinks hover:underline text-sm">PROJECTS</a>
+                <div class="relative group inline-block">
 
-                    <nav id="detailproject" class="none">
-                        <a href="./project/unikloh.html" class="thelinks hover:underline text-sm mr-2">UNIK LOH!</a>
-                        <a href="./project/netfliks.html" class="thelinks hover:underline text-sm mr-2">Netfliks</a>
-                        <a href="./project/revofun.html" class="thelinks hover:underline text-sm mr-2">Revofun</a>
-                        <a href="./project/Cafelicious.html" class="thelinks hover:underline text-sm">Cafelicious</a>
-                    </nav>
+                <a href="project.html" class="hover:underline text-sm">
+                    PROJECTS
+                </a>
+
+                <div class="hidden group-hover:block absolute bg-white shadow-md">
+                    <a href="./project/unikloh.html">UNIK LOH!</a>
+                    <a href="./project/netfliks.html">Netfliks</a>
+                    <a href="./project/revofun.html">Revofun</a>
+                    <a href="./project/Cafelicious.html">Cafelicious</a>
+                </div>
+
+                </div>
+
         </nav>
+
+             <!-- <nav id="detailproject" class="none">
+                <a href="./project/unikloh.html" class="thelinks hover:underline text-sm mr-2">UNIK LOH!</a>
+                <a href="./project/netfliks.html" class="thelinks hover:underline text-sm mr-2">Netfliks</a>
+                <a href="./project/revofun.html" class="thelinks hover:underline text-sm mr-2">Revofun</a>
+                <a href="./project/Cafelicious.html" class="thelinks hover:underline text-sm">Cafelicious</a>
+            </nav> -->
 
               <div class="menuburgercontainer cursor-pointer lg:hidden md:w-2/5 w-1/3 flex justify-start"><img src="./assets/menu.png"  class="menuburger w-[20px]" title="burger"></img></div>
               <div class="menunavburgercontainer hidden none w-[80%] border absolute left-0 bg-white p-2 rounded-md h-screen shadow-lg">
