@@ -180,18 +180,18 @@ function showdetailproject(){
 //     detailproject.classList.add('none');
 // });
 
-document.addEventListener("DOMContentLoaded", function(){
+// document.addEventListener("DOMContentLoaded", function(){
 
-const projecttext = document.getElementById('projecttext');
-const detailproject = document.getElementById('detailproject');
+// const projecttextburger = document.getElemen    tById('projecttext');
+// const detailprojectburger = document.getElementById('detailprojectburger');
 
-projecttext.addEventListener('mouseenter', function () {
-    alert('PROJECTS TEXT HOVERED');
-    detailproject.classList.remove('hidden');
-});
+// projecttextburger.addEventListener('mouseenter', function () {
+//     alert('PROJECTS TEXT HOVERED');
+//     detailprojectburger.classList.remove('hidden');
+// });
 
-projecttext.addEventListener('mouseleave', function () {
-    detailproject.classList.add('hidden');
-});
+// projecttextburger.addEventListener('mouseleave', function () {
+//     detailprojectburger.classList.add('hidden');
+// });
 
-});
+// });
