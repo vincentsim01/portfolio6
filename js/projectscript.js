@@ -165,6 +165,12 @@ function showdetailproject(){
     document.getElementById('projectdetail').classList.toggle('hidden');
 }
 
+
+const footeryear = document.getElementById('footeryear');
+footeryear.textContent = new Date().getFullYear();
+
+
+
 // const projecttext = document.getElementById('projecttext');
 // const projecttextburger = document.getElementById('projecttextburger');
 // const detailproject = document.getElementById('detailproject');

@@ -11,3 +11,7 @@ document.getElementsByClassName('menuburgercontainer')[0].addEventListener("clic
 
 
 document.getElementsByClassName('closeburgernav')[0].addEventListener("click", togglenavburger) 
+
+
+const footeryear = document.getElementById('footeryear');
+footeryear.textContent = new Date().getFullYear();

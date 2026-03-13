@@ -94,3 +94,8 @@ function toggleDarkMode(){
     document.querySelector('footer').classList.toggle('white');
     document.body.classList.toggle('dark')
 }
+
+
+const footeryear = document.getElementById('footeryear');
+footeryear.textContent = new Date().getFullYear();
+
