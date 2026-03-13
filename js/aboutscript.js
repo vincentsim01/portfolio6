@@ -154,6 +154,4 @@ modaloverlaylife.addEventListener("click", function(event){
     }
 })
 
-const footeryear = document.getElementById('footeryear');
-footeryear.textContent = new Date().getFullYear();
 
