@@ -17,7 +17,7 @@ const initialX = -450;
 const initialY = 0;
 
 // Animation parameters
-const startScroll = 300;
+const startScroll = 200;
 const endScroll = 450;
 
 function updateAnimation() {
