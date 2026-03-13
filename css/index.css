@@ -294,8 +294,9 @@ td{
 }
 
 .texttitle{
-    font-size:12px;
+    font-size:8px;
     text-align:left;
+    padding:5px;
 }
 
 .pricetext{
