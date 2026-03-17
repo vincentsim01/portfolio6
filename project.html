@@ -109,12 +109,15 @@
 </div> 
 </section>
 
+<!-- <section class="block w-[100%] absolute top-[50vh] hidden h-auto z-10 pl-20 pr-20 pb-50 pt-0 bg-white/80 text-white" id="modalOverlaysoftware"></section> -->
 
+<section class="z-50 bg-white/80" >
 
-<section class="z-50">
+<!-- id="modalOverlaysoftwaremobile" -->
 <div class="theprojectcontent2 block md:h-[90vh] p-1 md:flex md:gap-1 md:justify-between md:items-top md:p-10 text-center z-50 group">
 
     <!-- <div class="theprojectcontent2inside block text-center w-full border border-white border-[3px] rounded-md mt-3 mb-3 pt-3 pb-3 p-1 md:p-2 md:inline-block md:w-[31%] md:hover:flex-grow md:transition-all md:duration-[1300ms] md:hover:opacity-100 md:group-hover:opacity-50 md:hover:!opacity-100 md:hover:bg-white md:hover:text-black rounded-tr-[30px] rounded-bl-[30px]"> -->
+
         <div class="theprojectcontent2inside block text-center w-full border border-white border-[3px] rounded-md mt-3 mb-3 pt-3 pb-3 p-1 md:p-2 md:inline-block md:w-[100%] md:transition-all md:duration-[1300ms] md:hover:opacity-100 md:hover:bg-white md:hover:text-black rounded-tr-[30px] rounded-bl-[30px]">
         <img src="./assets/software.png" class="theprojectcontent2insideimage mx-auto md:pt-3 rounded-tr-[20px] rounded-bl-[20px] border border-black mb-3 w-[30%]" alt="Project 1">
         <h2>Software Development</h2>
@@ -124,9 +127,12 @@
         <!-- <div class="inline-block"><img src="https://i.ibb.co/GN0X5sB/stars.png" alt="stars" class="staricon mx-auto w-[28%] mb-2" border="0"/></div> -->
         <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 md:hidden mx-auto border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105 hover:bg-gray-600 hover:text-white" onclick="togglecontenttext('software')">View Project</button>
         <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 border mx-auto hidden md:block rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105 hover:bg-gray-600 hover:text-white" onclick="togglecontenttext2software()">View Project</button>
+        <div id="modalOverlaysoftwaremobile">
         <div class="projectcontenttext hidden p-2 border bg-black border-white rounded-md z-50 md:absolute md:w-full md:left-0 md:z-50" id="softwareprojectcontenttextmb">
+            <div class="flex flex-row h-[10vh] items-top justify-center"> <div class="mr-10 text-center text-white">Click Anywhere to Close </div> </div> 
+            <div class="projectcontenttextmobile p-2 border bg-black text-white border-white rounded-md z-50 md:w-full md:left-0 md:z-50" id="softwaremobileprojectcontenttext">
             <div class="mb-5 underline text-[0.8em]">Software Development Project</div>
-            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+            <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5">
                 <div>   
                     <img src="./assets/unikloh.png" class="projectdetailimage mx-auto">
                 </div>
@@ -140,7 +146,7 @@
                 </div>
             </div>
             
-            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+            <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5">
                 <div>   
                     <img src="./assets/Netflix.png" class="projectdetailimage mx-auto">
                 </div>
@@ -153,7 +159,7 @@
                     
                 </div>
             </div>
-            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+            <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5">
                 <div>
                     <img src="./assets/revofun.png" class="projectdetailimage mx-auto">
                 </div>
@@ -166,7 +172,7 @@
                 </div>
             </div>
            
-            <div class="projectdetail border border-white rounded-md p-3 mb-5">
+            <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5">
                     <div>
                         <img src="./assets/cafelicious 2.0.png" class="projectdetailimage mx-auto">
                     </div>
@@ -184,8 +190,8 @@
 
             </div>
 
-
-
+    </div>
+    </div>
     </div>
     </div>
     <!-- <div class="theprojectcontent2inside border border-white border-[3px] rounded-md mt-3 mb-3 pt-3 pb-3 block text-center w-full  md:p-2 md:inline-block md:w-[31%] md:hover:flex-grow md:transition-all md:duration-[1300ms] md:hover:opacity-100 md:group-hover:opacity-50 md:justify-center md:text-center md:hover:!opacity-100 md:hover:bg-white md:hover:text-black rounded-tr-[30px] rounded-bl-[30px]">
@@ -296,7 +302,7 @@
     <div class="flex flex-row h-[10vh] items-top justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
     <div class="projectcontenttext hidden p-2 border bg-black text-white border-white rounded-md z-50 md:w-full md:left-0 md:z-50" id="softwareprojectcontenttext">
         <div class="mb-5 underline text-[0.8em]">Software Development Projects</div>
-        <div class="projectdetail border border-white rounded-md p-3 mb-5">
+        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5">
             <div>   
                 <img src="./assets/unikloh.png" class="projectdetailimage mx-auto">
             </div>
@@ -308,7 +314,7 @@
                 <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="./project/unikloh.html" target='blank'>Extract All</a></button>
             </div>
         </div>
-        <div class="projectdetail border border-white rounded-md p-3 mb-5">
+        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5">
             <div>   
                 <img src="./assets/Netflix.png" class="projectdetailimage mx-auto">
             </div>
@@ -320,7 +326,7 @@
                 <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="./project/netflix.html" target='blank'>Extract All</a></button>
             </div>
         </div>
-        <div class="projectdetail border border-white rounded-md p-3 mb-5">
+        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5">
             <div>
                 <img src="./assets/revofun.png" class="projectdetailimage mx-auto">
             </div>
@@ -333,7 +339,7 @@
             </div>
         </div>
        
-        <div class="projectdetail border border-white rounded-md p-3 mb-5">
+        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5">
                 <div>
                     <img src="./assets/cafelicious 2.0.png" class="projectdetailimage mx-auto">
                 </div>

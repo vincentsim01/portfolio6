@@ -1,7 +1,9 @@
 const modalOverlaysoftware = document.getElementById('modalOverlaysoftware');
+const modalOverlaysoftwaremobile = document.getElementById('modalOverlaysoftwaremobile');
 const modalOverlaymarketing = document.getElementById('modalOverlaymarketing');
 const modalOverlayimage = document.getElementById('modalOverlayimage');
 const modalContentSoftware = document.getElementById('softwareprojectcontenttext');
+const modalContentSoftwaremobile = document.getElementById('softwareprojectcontenttextmobile');
 const modalContentMarketing = document.getElementById('marketingprojectcontenttext');
 const modalContentImage = document.getElementById('imageprojectcontenttext');
 const modalinside = document.getElementsByClassName('projectcontenttext');
@@ -16,6 +18,13 @@ function togglecontenttext2software(){
     contentId.classList.toggle("hidden");
     // alert(`modalOverlay${param}`)
     modalOverlaysoftware.classList.toggle("hidden");
+}
+
+function togglecontenttext2softwaremobile(){
+    let contentId = document.getElementById(`softwaremobileprojectcontenttext`);
+    contentId.classList.toggle("hidden");
+    // alert(`modalOverlay${param}`)
+    modalOverlaysoftwaremobile.classList.toggle("hidden");
 }
 
 function togglecontenttext2marketing(){
@@ -41,6 +50,15 @@ modalOverlaysoftware.addEventListener('click', function (event) {
     if (!modalContentSoftware.contains(event.target)) {
         modalContentSoftware.classList.add('hidden');
         modalOverlaysoftware.classList.add('hidden');
+    }
+
+  });
+
+  modalOverlaysoftwaremobile.addEventListener('click', function (event) {
+    event.stopPropagation();
+    if (!modalContentSoftwaremobile.contains(event.target)) {
+        modalContentSoftwaremobile.classList.add('hidden');
+        modalOverlaysoftwaremobile.classList.add('hidden');
     }
 
   });
