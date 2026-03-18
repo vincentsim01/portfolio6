@@ -21,7 +21,7 @@ function togglecontenttext2software(){
 }
 
 function togglecontenttext2softwaremobile(){
-    let contentId = document.getElementById(`softwaremobileprojectcontenttext`);
+    let contentId = document.getElementById(`softwareprojectcontenttextmb`);
     contentId.classList.toggle("hidden");
     // alert(`modalOverlay${param}`)
     modalOverlaysoftwaremobile.classList.toggle("hidden");
@@ -56,8 +56,8 @@ modalOverlaysoftware.addEventListener('click', function (event) {
 
   modalOverlaysoftwaremobile.addEventListener('click', function (event) {
     event.stopPropagation();
-    if (!modalContentSoftwaremobile.contains(event.target)) {
-        modalContentSoftwaremobile.classList.add('hidden');
+    if (!softwareprojectcontenttextmb.contains(event.target)) {
+        softwareprojectcontenttextmb.classList.add('hidden');
         modalOverlaysoftwaremobile.classList.add('hidden');
     }
 
