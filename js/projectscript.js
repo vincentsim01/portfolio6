@@ -84,7 +84,7 @@ modalOverlaysoftware.addEventListener('click', function (event) {
 
 
 
-const animatedImage = document.getElementsByClassName('');
+const animatedImage = document.getElementsByClassName('theprojectcontent2');
 
 
 

@@ -10,7 +10,7 @@
     <meta property="og:description" content="Project Portfolio">
     <meta property="og:image" content="https://i.ibb.co/k2pYPYTf/Screenshot-2025-07-03-102851.png">
     <meta property="og:type" content="website">
-    <link rel="icon" href="../assets/Sim Vincent.png" type="image/x-icon">
+    <link rel="icon" href="./assets/Sim Vincent.png" type="image/x-icon">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -114,72 +114,72 @@
 <section class="z-50" >
 
 <!-- id="modalOverlaysoftwaremobile" -->
-<div class="theprojectcontent2 block md:h-[90vh] p-1 md:flex md:gap-1 md:justify-between md:items-top md:p-10 text-center z-50 group">
+<div class="theprojectcontent2 block md:h-[90vh] p-1 md:flex md:gap-1 md:justify-between md:items-top md:p-10 text-center z-50 group border border-2 hover:shadow-md hover:shadow-gray-500/50 hover:bg-black hover:text-white transition duration-500 border-black m-10 rounded-tr-[10px] rounded-bl-[10px]">
 
     <!-- <div class="theprojectcontent2inside block text-center w-full border border-white border-[3px] rounded-md mt-3 mb-3 pt-3 pb-3 p-1 md:p-2 md:inline-block md:w-[31%] md:hover:flex-grow md:transition-all md:duration-[1300ms] md:hover:opacity-100 md:group-hover:opacity-50 md:hover:!opacity-100 md:hover:bg-white md:hover:text-black rounded-tr-[30px] rounded-bl-[30px]"> -->
 
         <div class="theprojectcontent2inside block text-center w-full border border-white border-[3px] rounded-md mt-3 mb-3 pt-3 pb-3 p-1 md:p-2 md:inline-block md:w-[100%] md:transition-all md:duration-[1300ms] md:hover:opacity-100 md:hover:bg-white md:hover:text-black rounded-tr-[30px] rounded-bl-[30px]">
-        <img src="./assets/software.png" class="theprojectcontent2insideimage mx-auto md:pt-3 rounded-tr-[20px] rounded-bl-[20px] border border-black mb-3 w-[30%]" alt="Project 1">
+        <img src="./assets/software.png" class="theprojectcontent2insideimage mx-auto md:pt-3 rounded-tr-[20px] rounded-bl-[20px] border border-black mb-3 w-[30%] hover:rotate-1" alt="Project 1">
         <h2>Software Development</h2>
         <br>
         <p class="text-xs"></p>
         <br>
         <!-- <div class="inline-block"><img src="https://i.ibb.co/GN0X5sB/stars.png" alt="stars" class="staricon mx-auto w-[28%] mb-2" border="0"/></div> -->
-        <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 md:hidden mx-auto border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105 hover:bg-gray-600 hover:text-white" onclick="togglecontenttext2softwaremobile()">View Project</button>
-        <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 border mx-auto hidden md:block rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105 hover:bg-gray-600 hover:text-white" onclick="togglecontenttext2software()">View Project</button>
+        <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 md:hidden mx-auto border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105 hover:bg-gray-600 hover:text-white hover:transition hover:duration-300" onclick="togglecontenttext2softwaremobile()">View Project</button>
+        <button class="theprojectcontent2insidebutton text-[0.8em] bg-white/50 border mx-auto hidden md:block rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105 hover:bg-gray-600 hover:text-white hover:transition hover:duration-300" onclick="togglecontenttext2software()">View Project</button>
         <div class='hidden' id="modalOverlaysoftwaremobile">
             <div class="projectcontenttext p-2 border bg-black border-white rounded-md z-50 md:absolute md:w-full md:left-0 md:z-50" id="softwaremobileprojectcontenttext">
                 <div class="flex flex-row h-[10vh] items-top justify-center"> <div class="mr-10 text-center text-white">Click Anywhere to Close </div> </div> 
                 <div class="projectcontenttextmobile p-2 hidden border bg-black text-white border-white rounded-md z-50 md:w-full md:left-0 md:z-50" id="softwareprojectcontenttextmb">
                 <div class="mb-5 underline text-[0.8em]">Software Development Project</div>
-                <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5">
+                <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5 hover:border-black hover:bg-white hover:text-black transition duration-300">
                     <div>   
-                        <img src="./assets/unikloh.png" class="projectdetailimage mx-auto">
+                        <a href="./project/unikloh.html" target='blank'><img src="./assets/unikloh.png" class="projectdetailimage mx-auto hover:rotate-2 transition duration-300"></a>
                     </div>
                     <div class="projectdetailtitle">
-                        <div class="text-[0.9em] mb-3 mt-3 text-white">Unik Loh!</div>
+                        <div class="text-[0.9em] mb-3 mt-3">Unik Loh!</div>
                         <br>
-                        <div class="text-[0.6em] text-white">Cafelicious is a full-stack web application designed to help users discover and order from cafes globally. The platform functions as a comprehensive cafe directory with search, filtering, ordering, and user management capabilities. Built the project using React JS, Bootstrap, HTML, JS, MongoDB, Express JS.</div>
+                        <div class="text-[0.6em]">Developed Unik Loh!, a full-stack software engineering project focused on a cosplay e-commerce platform with an integrated photoshoot service. Implemented authentication features including sign-up, login, and logout, along with light and dark mode functionality. Built the frontend using Next.js and connected it to the backend via custom APIs developed with NestJS. Deployed the application using Netlify, Railway, and Supabase.</div>
                         <br>
                         <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="./project/unikloh.html" target='blank'>Extract All</a></button>
                         
                     </div>
                 </div>
                 
-                <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5">
+                <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5 hover:border-black hover:bg-white hover:text-black transition duration-300">
                     <div>   
-                        <img src="./assets/Netflix.png" class="projectdetailimage mx-auto">
+                        <a href="./project/netflix.html" target='blank'><img src="./assets/Netflix.png" class="projectdetailimage mx-auto hover:rotate-2 transition duration-300"></a>
                     </div>
                     <div class="projectdetailtitle">
-                        <div class="text-[0.9em] mb-3 mt-3 text-white">Netflix</div>
+                        <div class="text-[0.9em] mb-3 mt-3">Netflix</div>
                         <br>
-                        <div class="text-[0.6em] text-white">develop a Netflix-like streaming service using React for the frontend and MongoDB for the backend. The application will allow users to browse, search, and watch a wide array of movies and TV shows.</div>
+                        <div class="text-[0.6em]">develop a Netflix-like streaming service using React for the frontend and MongoDB for the backend. The application will allow users to browse, search, and watch a wide array of movies and TV shows.</div>
                         <br>
                         <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="./project/netflix.html" target='blank'>Extract All</a></button>
                         
                     </div>
                 </div>
-                <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5">
+                <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5 hover:border-black hover:bg-white hover:text-black transition duration-300">
                     <div>
-                        <img src="./assets/revofun.png" class="projectdetailimage mx-auto">
+                        <a href="./project/revofun.html" target='blank'><img src="./assets/revofun.png" class="projectdetailimage mx-auto hover:rotate-2 transition duration-300"></a>
                     </div>
                     <div class="projectdetailtitle">
-                    <div class="text-[0.9em] mb-3 mt-3 text-white">Revofun</div>
+                    <div class="text-[0.9em] mb-3 mt-3">Revofun</div>
                     <br>
-                    <div class="text-[0.6em] text-white">Revofun is a javascript based browser game that allows players to engage in fun and interactive gameplay.</div>
+                    <div class="text-[0.6em]">Revofun is a javascript based browser game that allows players to engage in fun and interactive gameplay.</div>
                     <br>
                         <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="./project/revofun.html" target='blank'>Extract All</a></button>
                     </div>
                 </div>
             
-                <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5">
+                <div class="projectdetail inline-block w-[40%] border border-white rounded-md p-3 mb-5 hover:border-black hover:bg-white hover:text-black transition duration-300">
                         <div>
-                            <img src="./assets/cafelicious 2.0.png" class="projectdetailimage mx-auto">
+                            <a href='./project/Cafelicious.html' target='blank'><img src="./assets/cafelicious 2.0.png" class="projectdetailimage mx-auto hover:rotate-2 transition duration-300"></a>
                         </div>
                         <div class="projectdetailtitle">
-                            <div class="text-[0.9em] mb-3 mt-3 text-white">Cafelicious</div>
+                            <div class="text-[0.9em] mb-3 mt-3 ">Cafelicious</div>
                         <br>
-                        <div class="text-[0.6em] text-white">Cafelicious is a dynamic cafe directory application developed using the MERN stack (MongoDB, Express, React, and Node.js). This application allows users to effortlessly search for cafes based on three key criteria: location, cuisine type, and price range.</div>
+                        <div class="text-[0.6em]">Cafelicious is a dynamic cafe directory application developed using the MERN stack (MongoDB, Express, React, and Node.js). This application allows users to effortlessly search for cafes based on three key criteria: location, cuisine type, and price range.</div>
                         <br>
                             <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href='./project/Cafelicious.html' target='blank'>Extract All</a></button>
                         </div>
@@ -302,21 +302,21 @@
     <div class="flex flex-row h-[10vh] items-top justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
     <div class="projectcontenttext hidden p-2 border bg-black text-white border-white rounded-md z-50 md:w-full md:left-0 md:z-50" id="softwareprojectcontenttext">
         <div class="mb-5 underline text-[0.8em]">Software Development Projects</div>
-        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5">
+        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5 hover:border-black hover:bg-white hover:text-black transition duration-300">
             <div>   
-                <img src="./assets/unikloh.png" class="projectdetailimage mx-auto">
+                <a href="./project/unikloh.html" target='blank'><img src="./assets/unikloh.png" class="projectdetailimage mx-auto hover:rotate-2 transition duration-300"></a>
             </div>
             <div class="projectdetailtitle text-center">
-                <div class="text-[0.9em] text-white mb-3 mt-3">Unik Loh!</div>
+                <div class="text-[0.9em] mb-3 mt-3">Unik Loh!</div>
                 <br>
-                <div class="text-[0.6em] text-white">Cafelicious is a full-stack web application designed to help users discover and order from cafes globally. The platform functions as a comprehensive cafe directory with search, filtering, ordering, and user management capabilities. Built the project using React JS, Bootstrap, HTML, JS, MongoDB, Express JS.</div>
+                <div class="text-[0.6em]">Developed Unik Loh!, a full-stack software engineering project focused on a cosplay e-commerce platform with an integrated photoshoot service. Implemented authentication features including sign-up, login, and logout, along with light and dark mode functionality. Built the frontend using Next.js and connected it to the backend via custom APIs developed with NestJS. Deployed the application using Netlify, Railway, and Supabase.</div>
                 <br><br>
                 <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="./project/unikloh.html" target='blank'>Extract All</a></button>
             </div>
         </div>
-        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5">
+        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5 hover:border-black hover:bg-white hover:text-black transition duration-300">
             <div>   
-                <img src="./assets/Netflix.png" class="projectdetailimage mx-auto">
+                <a href="./project/netflix.html" target='blank'><img src="./assets/Netflix.png" class="projectdetailimage mx-auto hover:rotate-2 transition duration-300"></a>
             </div>
             <div class="projectdetailtitle text-center">
                 <div class="text-[0.9em] mb-3 mt-3">Netflix</div>
@@ -326,9 +326,9 @@
                 <button class="extractall text-[0.6em] bg-white/50 border rounded-tr-[10px] rounded-bl-[10px] p-2 cursor-pointer hover:scale-105"><a href="./project/netflix.html" target='blank'>Extract All</a></button>
             </div>
         </div>
-        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5">
+        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5 hover:border-black hover:bg-white hover:text-black transition duration-300">
             <div>
-                <img src="./assets/revofun.png" class="projectdetailimage mx-auto">
+                <a href="./project/revofun.html" target='blank'><img src="./assets/revofun.png" class="projectdetailimage mx-auto hover:rotate-2 transition duration-300"></a>
             </div>
             <div class="projectdetailtitle text-center">
                 <div class="text-[0.9em] mb-3 mt-3">Revofun</div>
@@ -339,9 +339,9 @@
             </div>
         </div>
        
-        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5">
+        <div class="projectdetail inline-block w-[45%] border border-white rounded-md p-3 m-5 hover:border-black hover:bg-white hover:text-black transition duration-300">
                 <div>
-                    <img src="./assets/cafelicious 2.0.png" class="projectdetailimage mx-auto">
+                    <a href='./project/Cafelicious.html' target='blank'><img src="./assets/cafelicious 2.0.png" class="projectdetailimage mx-auto hover:rotate-2 transition duration-300"></a>
                 </div>
                 <div class="projectdetailtitle text-center">
                     <div class="text-[0.9em] mb-3 mt-3">Cafelicious</div>
