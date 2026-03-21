@@ -99,3 +99,33 @@ function toggleDarkMode(){
 const footeryear = document.getElementById('footeryear');
 footeryear.textContent = new Date().getFullYear();
 
+
+
+ const form = document.getElementById('userForm');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault(); // stop normal submit
+
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+  data.age = Number(data.age);
+
+  try {
+    const res = await fetch('http://localhost:3000/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (!res.ok) throw new Error('Server error');
+
+    const result = await res.json();
+    alert('User created! ID: ' + result.id);
+    form.reset();
+  } catch (err) {
+    console.error(err);
+    alert('Error creating user');
+  }
+});

@@ -104,7 +104,7 @@
             <div class="p-5 text-3xl">ANY QUESTIONS?</div>
             <div class="p-5">SEND YOUR INQUIRY HERE</div>
         </div>
-        <form action="./result.html" method="post" class="text-[0.9em] md:text-2xl thecontactform border border-white rounded-tr-xl rounded-bl-xl p-3 md:p-7 ml-8 block w-[90%] md:inline-block md:w-3/5">
+        <form id='userForm' method="post" class="text-[0.9em] md:text-2xl thecontactform border border-white rounded-tr-xl rounded-bl-xl p-3 md:p-7 ml-8 block w-[90%] md:inline-block md:w-3/5">
             <h2 class="mb-7"> CONTACT ME</h2>   
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required placeholder="Enter your name" class="thecontactinput ml-5 border-b border-white w-[90%]">
@@ -126,9 +126,9 @@
                 </select>
                 <br><br>
                 <label for="gender" id="gender">Gender</label>
-                <input type="radio" id="gender" name="gender" value="male" class=" ml-5" required>
+                <input type="radio" id="male" name="gender" value="male" class=" ml-5" required>
                 <label for="male">Male</label>
-                <input type="radio" id="gender" name="gender" value="female" class=" ml-5" required>
+                <input type="radio" id="female" name="gender" value="female" class=" ml-5" required>
                 <label for="female">Female</label>
                 <br><br><br>
                 <div class="flex justify-end">
