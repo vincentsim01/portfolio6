@@ -111,7 +111,7 @@ form.addEventListener('submit', async (e) => {
   data.age = Number(data.age);
 
   try {
-    const res = await fetch('http://localhost:3000/users', {
+    const res = await fetch('https://portfolio6be-production.up.railway.app', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -119,7 +119,12 @@ form.addEventListener('submit', async (e) => {
       body: JSON.stringify(data),
     });
 
-    if (!res.ok) throw new Error('Server error');
+    if (!res.ok) {
+    const errorData = await res.json();
+    console.log('FULL ERROR:', errorData);
+    alert(JSON.stringify(errorData));
+    return;
+    }
 
     const result = await res.json();
     alert('User created! ID: ' + result.id);
