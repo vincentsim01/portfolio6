@@ -109,9 +109,10 @@ form.addEventListener('submit', async (e) => {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
   data.age = Number(data.age);
-
+// http://localhost:3000/users
+// https://portfolio6be-production.up.railway.app/users
   try {
-    const res = await fetch('https://portfolio6be-production.up.railway.app', {
+    const res = await fetch('https://portfolio6be-production.up.railway.app/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
