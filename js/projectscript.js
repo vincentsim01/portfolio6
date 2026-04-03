@@ -7,6 +7,19 @@ const modalContentSoftwaremobile = document.getElementById('softwareprojectconte
 const modalContentMarketing = document.getElementById('marketingprojectcontenttext');
 const modalContentImage = document.getElementById('imageprojectcontenttext');
 const modalinside = document.getElementsByClassName('projectcontenttext');
+let menunavburgercontainer = document.getElementsByClassName('menunavburgercontainer');
+let menuburgericon = document.getElementsByClassName('menuburger');
+let menuburgercontainer = document.getElementsByClassName('menuburgercontainer');
+
+
+function togglenavburger(){
+    menunavburgercontainer[0].classList.toggle("hidden");
+}
+
+document.getElementsByClassName('menuburgercontainer')[0].addEventListener("click", togglenavburger)   
+
+
+document.getElementsByClassName('closeburgernav')[0].addEventListener("click", togglenavburger) 
 
 function togglecontenttext(param){
     let contentId = document.getElementById(`${param}projectcontenttextmb`);
@@ -219,3 +232,21 @@ footeryear.textContent = new Date().getFullYear();
 // });
 
 // });
+
+
+// let menunavburgercontainer = document.getElementsByClassName('menunavburgercontainer');
+// let menuburgericon = document.getElementsByClassName('menuburger');
+// let menuburgercontainer = document.getElementsByClassName('menuburgercontainer');
+
+// function togglenavburger(){
+//     menunavburgercontainer[0].classList.toggle("hidden");
+// }
+
+// document.getElementsByClassName('menuburgercontainer')[0].addEventListener("click", togglenavburger)   
+
+
+// document.getElementsByClassName('closeburgernav')[0].addEventListener("click", togglenavburger) 
+
+
+// const footeryear = document.getElementById('footeryear');
+// footeryear.textContent = new Date().getFullYear();
