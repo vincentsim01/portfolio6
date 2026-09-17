@@ -88,7 +88,7 @@
 
                     </div>
               </div>
-        <div class="logoimagecontainer lg:w-1/9 md:w-1/5 w-1/3"><a href="index.html"><img src='./assets/logo.png' class="logoimage insideheader hover:rotate-10 transition-transform duration-500 w-[150%] lg:w-[180px]"></img></a></div>
+        <div class="logoimagecontainer lg:w-1/9 md:w-1/5 w-1/3"><a href="index.html"><img src='./assets/logo.png' class="logoimage insideheader hover:rotate-10 transition-transform duration-500 w-[180%] max-w-none lg:w-[220px]"></img></a></div>
         <nav class="theinsideheaderright lg:w-4/9 md:w-2/5 w-1/3 flex justify-end">
                   <div class="rightheadercontentcontainer flex justify-end">
                       <!-- <span class="searchinput lg:w-3/5 lg:inline-block hidden"><input type="text" class="thelinks searchinput border rounded-md w-[90%] pl-2 pr-2" placeholder="Search here"></input></span>
@@ -182,32 +182,31 @@
 </section>
 
 <!-- md:h-auto -->
-<section class="aboutintro bg-[url('https://i.ibb.co/BVCkmJFP/st-john-island.jpg')] relative bg-no-repeat bg-cover bg-center p-1 transition-all duration-[2000ms] ">
-    <div class="block p-1 text-center md:pt-10 md:block md:top-0">
-        <h2 class="aboutintrotext font-bold text-2xl">
+<section class="snapshot-section aboutintro">
+    <div class="snapshot-inner">
+        <p class="snapshot-kicker">A closer look</p>
+        <h2 class="aboutintrotext">
             <span class="icon">👨‍💻</span>
             SNAPSHOT
         </h2>
-        <br>
         
-        <div class="aboutintrointrotext text-[0.8em] text-center md:mb-10">
+        <div class="aboutintrointrotext">
             Meet <span class="highlight">Vincent</span>, a passionate newcomer to the world of software development. 
-            <br>He had a solid years of experience in digital marketing, 
-            <br>but a spark of curiosity about how websites and apps were built changed everything.
+            He had years of experience in digital marketing, but a spark of curiosity about how websites and apps were built changed everything.
         </div>
 
-        <section class="mt-3 md:pb-20 md:flex md:items-start md:justify-center md:gap-2 md:h-auto" id="lifesummary">
-            <div class="segment border text-white hover:text-black bg-gray-900/70 hover:bg-white/50 p-3 md:w-[29%] md:inline-block md:h-auto hover:scale-105  transition-all duration-[500ms] rounded-tr-[10px] rounded-bl-[10px]" id="education">
+        <section class="snapshot-grid" id="lifesummary">
+            <div class="segment" id="education">
                 <div class="segment-header">
                     <div class="segment-info">
                         <div class="segment-icon education-icon">🎓</div>
                         <h3 class="segment-title">Education</h3>
                         <br>
                     </div>
-                    <button onclick="toggleSegment('education')" class="expand-button text-[0.6em] bg-white/50 border p-2 rounded-md md:hidden cursor-pointer hover:scale-105 rounded-tr-[10px] rounded-bl-[10px]" id="education-btn" >Expand</button>
+                    <button onclick="toggleSegment('education', this)" class="expand-button text-[0.6em] bg-white/50 border p-2 rounded-md md:hidden cursor-pointer hover:scale-105 rounded-tr-[10px] rounded-bl-[10px]" id="education-btn" aria-controls="education-content" aria-expanded="false">Expand</button>
                     <button onclick="showsegmenttexteducation()" class="expand-button text-[0.6em] bg-white/50 hidden md:block border p-2 rounded-md md:block cursor-pointer hover:scale-105 mx-auto rounded-tr-[10px] rounded-bl-[10px]" id="education-btn ">Expand</button>
                 </div>
-                <div class="segment-content hidden " id="education-content">
+                <div class="segment-content" id="education-content" aria-hidden="true">
                     <div class="segment-text text-[0.6em] p-3">
                         <div class="border border-black text-center mb-3 rounded-tr-[10px] rounded-bl-[10px]">
                             <div><b>RevoU</b></div>
@@ -276,7 +275,7 @@
            
         
             <!-- Work Experience Section -->
-            <div class="segment border text-white hover:text-black bg-gray-900/70 hover:bg-white/50 rounded-tr-[10px] rounded-bl-[10px] p-3 md:w-[29%] md:inline-block md:h-auto hover:scale-105 transition-all duration-[500ms]" id="experience">
+            <div class="segment" id="experience">
                 <div class="segment-header" >
                     <div class="segment-info">
                         <div class="segment-icon experience-icon">💼</div>
@@ -284,9 +283,9 @@
                     </div>
                     <br>
                 </div>
-                <button onclick="toggleSegment('experience')" class="expand-button text-sm md:text-base bg-white/50 border p-2 rounded-md md:hidden cursor-pointer hover:scale-105 rounded-tr-[10px] rounded-bl-[10px]" id="experience-btn">Expand/Close</button>
+                <button onclick="toggleSegment('experience', this)" class="expand-button text-sm md:text-base bg-white/50 border p-2 rounded-md md:hidden cursor-pointer hover:scale-105 rounded-tr-[10px] rounded-bl-[10px]" id="experience-btn" aria-controls="experience-content" aria-expanded="false">Expand</button>
                 <button onclick="showsegmenttextexperience()" class="expand-button text-sm md:text-base bg-white/50 border p-2 rounded-md hidden md:block cursor-pointer hover:scale-105 mx-auto rounded-tr-[10px] rounded-bl-[10px]" id="education-btn ">Expand/Close</button>
-                <div class="segment-content hidden" id="experience-content">
+                <div class="segment-content" id="experience-content" aria-hidden="true">
                     <div class="segment-text text-[0.6em] p-3">
                         <div class="border border-black text-center mb-3 rounded-tr-[10px] rounded-bl-[10px]">
                             <div><b>Mathvision Enrichment</b></div>
@@ -350,9 +349,9 @@
             </div>
         
             </div>
-            <div class=" bg-white/90 m-5 hidden w-[98%] border absolute z-index-50 top-[10px] rounded-tr-[10px] rounded-bl-[10px] shadow-lg rounded-tr-[10px] rounded-bl-[10px] z-10" id="modaloverlayeducation">
-                <div class="flex flex-row h-[10%] items-top justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
-                <div class="segment-content hidden m-20 border rounded-tr-[10px] rounded-bl-[10px] bg-gray-900 text-white" id="education-content2">
+            <div class="snapshot-modal hidden border" id="modaloverlayeducation" role="dialog" aria-modal="true" aria-labelledby="education-modal-title">
+                <div class="snapshot-modal-header"><h2 id="education-modal-title">Education</h2><p>Click outside to close</p></div>
+                <div class="segment-content hidden m-20 border rounded-tr-[10px] rounded-bl-[10px] bg-gray-900 text-white border" id="education-content2">
 
                    
                     
@@ -430,14 +429,15 @@
                                   <img src='./assets/NTU.png' class="w-[50px] h-[50px] text-center"></img>
                             </div>
                         </div>
-
+                            <div class="snapshot-modal-footer text-center">Click outside to close</div>
                     </div>
-            </div>
-            <div class="flex flex-row h-[10%] items-end justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
+
             </div>
 
-            <div class=" bg-white/90 m-5 hidden border absolute z-index-50 top-[10px] rounded-tr-[10px] rounded-bl-[10px] shadow-lg z-10" id="modaloverlayexperience">
-            <div class="flex flex-row h-[10%] items-top justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
+            </div>
+
+            <div class="snapshot-modal hidden" id="modaloverlayexperience" role="dialog" aria-modal="true" aria-labelledby="experience-modal-title">
+            <div class="snapshot-modal-header"><h2 id="experience-modal-title">Work Experience</h2><p>Click outside to close</p></div>
             <div class="segment-content hidden m-20" id="experience-content2">
                 <div class="segment-text text-[0.6em] p-3 bg-gray-900 text-white rounded-tr-[10px] rounded-bl-[10px]">
 
@@ -516,8 +516,9 @@
                             </div>
                     </div>
                 </div>
+                <div class="snapshot-modal-footer text-center">Click outside to close</div>
             </div>
-            <div class="flex flex-row h-[10%] items-end justify-center"> <div class="mr-10 text-center text-black">Click Anywhere to Close </div> </div> 
+
             </div>
         
         </section>
@@ -525,12 +526,31 @@
 </section>
 
 <section class="gallerycontainer text-center z-0">
-    <div class="gallerytitle"><h2 class="font-bold text-2xl" >GALLERY</h2></div>
-    <div class="galleryinsidecontainer block p-2 md:grid md:grid md:grid-cols-3 md:grid-rows-2">  
-        <img src="./assets/busan.jpg" title="Busan Korea" class="galleryimage w-full md:h-[60%] hover:scale-105 md:self-end">
-        <img src="./assets/kinderdijk.jpg" title="Kinderdijk Netherlands" class="galleryimage w-full md:h-[60%] hover:scale-105 md:self-end">
-        <img src="./assets/arc de triomph.jpg" title="Arc De Triomph France" class="galleryimage w-full md:row-span-2 md:h-[80%] hover:scale-105 md:self-end">
-        <img src="./assets/st john island.jpg" title="St John Island Singapore" class="galleryimage w-full md:col-span-2 md:h-[100%] hover:scale-105 md:self-start">    
+    <div class="gallerytitle">
+        <p class="galleryeyebrow">Travel journal</p>
+        <h2 class="font-bold text-2xl">GALLERY</h2>
+    </div>
+    <div class="galleryinsidecontainer">
+        <figure class="galleryitem galleryitem-wide">
+            <img src="./assets/busan.jpg" title="Busan Korea" alt="Coastal view of Busan, South Korea" class="galleryimage">
+            <figcaption>Busan, South Korea</figcaption>
+        </figure>
+        <figure class="galleryitem">
+            <img src="./assets/kinderdijk.jpg" title="Kinderdijk Netherlands" alt="Windmills at Kinderdijk in the Netherlands" class="galleryimage">
+            <figcaption>Kinderdijk, Netherlands</figcaption>
+        </figure>
+        <figure class="galleryitem galleryitem-tall">
+            <img src="./assets/arc de triomph.jpg" title="Arc De Triomph France" alt="Arc de Triomphe in Paris, France" class="galleryimage">
+            <figcaption>Paris, France</figcaption>
+        </figure>
+        <figure class="galleryitem galleryitem-wide">
+            <img src="./assets/st john island.jpg" title="St John Island Singapore" alt="Beach at St John's Island in Singapore" class="galleryimage">
+            <figcaption>St John's Island, Singapore</figcaption>
+        </figure>
+        <figure class="galleryitem">
+            <img src="./assets/vietnam.jpg" title="Vietnam" alt="Travel view from Vietnam" class="galleryimage">
+            <figcaption>Vietnam</figcaption>
+        </figure>
     </div>
 </section>
 

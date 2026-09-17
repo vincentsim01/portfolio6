@@ -1,7 +1,13 @@
-function toggleSegment(segmentId) {
-    const segment = document.getElementById(`${segmentId}-content`);
-    segment.classList.toggle("hidden");
-  }
+function toggleSegment(segmentId, button) {
+    const content = document.getElementById(`${segmentId}-content`);
+    const segment = document.getElementById(segmentId);
+    const isExpanded = content.classList.toggle('is-expanded');
+
+    content.setAttribute('aria-hidden', String(!isExpanded));
+    segment.classList.toggle('is-expanded', isExpanded);
+    button.setAttribute('aria-expanded', String(isExpanded));
+    button.textContent = isExpanded ? 'Close' : 'Expand';
+}
 
 
   const animatedImage = document.getElementById('lifesummary');
