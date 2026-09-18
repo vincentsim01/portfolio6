@@ -94,6 +94,7 @@ updateAnimationskill();
 function toggleDarkMode(){
     document.body.classList.toggle('dark')
     document.getElementsByClassName('theheader')[0].classList.toggle('dark')
+    document.getElementsByClassName('projecthover').classList.toggle('darkwhite')
     document.getElementsByClassName('banner')[0].classList.toggle('darkwhite')
     document.querySelector('footer').classList.toggle('white')
 }
