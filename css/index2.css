@@ -14,7 +14,8 @@
     color:black;
 }
 
-.theheader.dark .projecthover{
+.theheader.dark .projecthover,
+.theheader.dark .group-hover\:block a{
     color:black;
 }
 
