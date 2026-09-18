@@ -14,6 +14,16 @@
     color:black;
 }
 
+.textrotatedfont{
+    color:white;
+    text-shadow:2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.textsmall > div{
+    background-color:rgba(0, 0, 0, 0.78);
+    color:white;
+}
+
         .none{
             display: none;
         }
